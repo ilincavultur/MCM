@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/NewXMLSchema" targetNamespace="http://www.example.org/NewXMLSchema" elementFormDefault="qualified">
+
 <!-- simple elements -->
 <xs:element name="name">
 	<xs:simpleType>
@@ -14,17 +15,23 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="male"></xs:enumeration>
 			<xs:enumeration value="female"></xs:enumeration>
-			<xs:enumeration value="other"></xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:element>
 <xs:element name="occupation" type="xs:string"/>
+<xs:element name="person" type="tns:contact"></xs:element>
 <xs:element name="phonenumber" type="xs:string"/>
 <xs:element name="address" type="xs:string"/>
 <xs:element name="city" type="xs:string"/>
 <xs:element name="state" type="xs:string"/>
 <xs:element name="email" type="xs:string"/>
-<xs:element name="placementfee" type="xs:double"/>
+<xs:element name="placementfee">
+	<xs:simpleType>
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0."></xs:minInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
 <xs:element name="period" type="xs:duration"/>
 <xs:element name="breed">
 	<xs:simpleType>
@@ -77,21 +84,18 @@
 <xs:attribute name="duration" type="xs:duration"></xs:attribute>
 
 <!-- complex elements -->
-<xs:element name="contact">
-	<xs:complexType>
-		<xs:sequence>
-			<xs:element ref="tns:name"></xs:element>
-			<xs:element ref="tns:age"></xs:element>
-			<xs:element ref="tns:gender"></xs:element>
-			<xs:element ref="tns:phonenumber"></xs:element>
-			<xs:element ref="tns:address"></xs:element>
-			<xs:element ref="tns:city"></xs:element>
-			<xs:element ref="tns:state"></xs:element>
-			<xs:element ref="tns:email"></xs:element>
-
-		</xs:sequence>
-	</xs:complexType>
-</xs:element>
+<xs:complexType name="contact">
+	<xs:sequence>
+		<xs:element ref="tns:name"></xs:element>
+		<xs:element ref="tns:age"></xs:element>
+		<xs:element ref="tns:gender"></xs:element>
+		<xs:element ref="tns:phonenumber"></xs:element>
+		<xs:element ref="tns:address"></xs:element>
+		<xs:element ref="tns:city"></xs:element>
+		<xs:element ref="tns:state"></xs:element>
+		<xs:element ref="tns:email"></xs:element>
+	</xs:sequence>
+</xs:complexType>
 
 <xs:element name="horse">
 	<xs:complexType>
@@ -109,29 +113,35 @@
 
 <xs:element name="rider">
 	<xs:complexType>
-		<xs:sequence>
-
-			<xs:element ref="tns:contact"></xs:element>
-		</xs:sequence>
-		<xs:attribute ref="tns:riderID" use="required"/>
+		<xs:complexContent>
+			<xs:extension base="tns:contact">
+				<xs:attribute ref="tns:riderID" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 </xs:element>
 
 <xs:element name="owner">
 	<xs:complexType>
-		<xs:sequence>
-
-			<xs:element ref="tns:contact"></xs:element>
-			<xs:element ref="tns:horse"></xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="tns:contact">
+				<xs:sequence>
+					<xs:element ref="tns:horse"></xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 </xs:element>
 
 <xs:element name="veterinary">
 	<xs:complexType>
-		<xs:sequence>
-			<xs:element ref="tns:contact"></xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="tns:contact">
+				<xs:sequence>
+					
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 </xs:element>
 
@@ -161,19 +171,16 @@
 		<xs:sequence>
 			<xs:element ref="tns:stabletype"></xs:element>
 			<xs:element ref="tns:horsenumber"></xs:element>
-
 		</xs:sequence>
 		<xs:attribute ref="tns:area"></xs:attribute>
 	</xs:complexType>
 </xs:element>
 
-
 <xs:element name="facility">
 	<xs:complexType>
 		<xs:sequence>
-			<xs:element ref="tns:name"></xs:element>
+			<xs:element name="facilityinfo" type="tns:contact"></xs:element>
 			<xs:element ref="tns:owner"></xs:element>
-			<xs:element ref="tns:contact"></xs:element>
 			<xs:element ref="tns:horse"></xs:element>
 			<xs:element ref="tns:rider"></xs:element>
 			<xs:element ref="tns:veterinary"></xs:element>
@@ -184,11 +191,6 @@
 	</xs:complexType>
 </xs:element>
 
-
-
-
-
 </xs:schema>
 
 
-<!-- xmlns:tns="http://www.example.org/NewXMLSchema" -->
