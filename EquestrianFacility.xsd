@@ -9,22 +9,68 @@
 		</xs:restriction>
 	</xs:simpleType>
 </xs:element>
-<xs:element name="age" type="xs:positiveInteger"/>
-<xs:element name="gender">
+
+<xs:element name="age">
 	<xs:simpleType>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="male"></xs:enumeration>
-			<xs:enumeration value="female"></xs:enumeration>
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="18"></xs:minInclusive>
+			<xs:maxInclusive value="120"></xs:maxInclusive>
 		</xs:restriction>
 	</xs:simpleType>
 </xs:element>
-<xs:element name="occupation" type="xs:string"/>
+
+<xs:simpleType name="gender">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="male"></xs:enumeration>
+		<xs:enumeration value="female"></xs:enumeration>
+	</xs:restriction>
+</xs:simpleType>
+
 <xs:element name="veterinary" type="tns:contact"></xs:element>
-<xs:element name="phonenumber" type="xs:string"/>
-<xs:element name="address" type="xs:string"/>
-<xs:element name="city" type="xs:string"/>
-<xs:element name="state" type="xs:string"/>
-<xs:element name="email" type="xs:string"/>
+
+<xs:element name="phonenumber"> 
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"></xs:maxLength>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="address"> 
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"></xs:maxLength>			
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="city">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"></xs:maxLength>			
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="state"> 
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"></xs:maxLength>			
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="email"> 
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"></xs:maxLength>
+			<!-- source: http://www.zvon.org/xxl/XMLSchemaTutorial/Output/ser_types_st4.html#0 -->
+			<xs:pattern value="[^@]+@[^\.]+\..+"></xs:pattern>			
+			<!-- source end -->
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
 <xs:element name="placementfee">
 	<xs:simpleType>
 		<xs:restriction base="xs:double">
@@ -32,57 +78,61 @@
 		</xs:restriction>
 	</xs:simpleType>
 </xs:element>
+
 <xs:element name="period" type="xs:duration"/>
-<xs:element name="breed">
-	<xs:simpleType>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value=""></xs:enumeration>
-		</xs:restriction>
-	</xs:simpleType>
-</xs:element>
-<xs:element name="fieldtype">
-	<xs:simpleType>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="grass"></xs:enumeration>
-			<xs:enumeration value="soil"></xs:enumeration>
-			<xs:enumeration value="gravel"></xs:enumeration>
-		</xs:restriction>
-	</xs:simpleType>
-</xs:element>
-<xs:element name="obstacles" type="xs:boolean"/>
-<xs:element name="tournamenttype">
-	<xs:simpleType>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="jumping"></xs:enumeration>
-			<xs:enumeration value="flat racing"></xs:enumeration>
-			<xs:enumeration value="steeplechasing"></xs:enumeration>
-			<xs:enumeration value="harness racing"></xs:enumeration>
-			<xs:enumeration value="endurance"></xs:enumeration>
-		</xs:restriction>
-	</xs:simpleType>
-</xs:element>
-<xs:element name="stabletype">
-	<xs:simpleType>
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="restricts movement"></xs:enumeration>
-			<xs:enumeration value="freedom of movement"></xs:enumeration>
-		</xs:restriction>
-	</xs:simpleType>
-</xs:element>
-<xs:element name="horsenumber">
-	<xs:simpleType>
-		<xs:restriction base="xs:positiveInteger">
-			<xs:maxInclusive value="3"></xs:maxInclusive>
-		</xs:restriction>
-	</xs:simpleType>
-</xs:element>
+
+<xs:simpleType name="breed">
+	<xs:restriction base="xs:string">
+		<xs:maxLength value="10"></xs:maxLength>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="fieldtype">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="grass"></xs:enumeration>
+		<xs:enumeration value="soil"></xs:enumeration>
+		<xs:enumeration value="gravel"></xs:enumeration>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tournamenttype">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="jumping"></xs:enumeration>
+		<xs:enumeration value="flat racing"></xs:enumeration>
+		<xs:enumeration value="steeplechasing"></xs:enumeration>
+		<xs:enumeration value="harness racing"></xs:enumeration>
+		<xs:enumeration value="endurance"></xs:enumeration>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="stabletype">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="restricts movement"></xs:enumeration>
+		<xs:enumeration value="freedom of movement"></xs:enumeration>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="horsenumber">
+	<xs:restriction base="xs:positiveInteger">
+		<xs:maxInclusive value="3"></xs:maxInclusive>
+	</xs:restriction>
+</xs:simpleType>
+
 
 <!-- attributes -->
 <xs:attribute name="id" type="xs:string"></xs:attribute>
 <xs:attribute name="horseID" type="xs:string"/>
+<xs:attribute name="stableID" type="xs:string"></xs:attribute>
 <xs:attribute name="riderID" type="xs:string"/>
+<xs:attribute name="ownerID" type="xs:string"></xs:attribute>
 <xs:attribute name="area" type="xs:double"></xs:attribute>
 <xs:attribute name="duration" type="xs:duration"></xs:attribute>
+<xs:attribute name="obstacles" type="xs:boolean"/>
+<xs:attribute name="horsenumber" type="tns:horsenumber"></xs:attribute>
+<xs:attribute name="stabletype" type="tns:stabletype"></xs:attribute>
+<xs:attribute name="fieldtype" type="tns:fieldtype"></xs:attribute>
+<xs:attribute name="gender" type="tns:gender"></xs:attribute>
+<xs:attribute name="breed" type="tns:breed"></xs:attribute>
 
 <!-- complex elements -->
 <xs:complexType name="contact">
@@ -100,13 +150,16 @@
 	<xs:complexType>
 		<xs:sequence>
 			<xs:element ref="tns:name"></xs:element>
-			<xs:element ref="tns:age"></xs:element>
-			<xs:element ref="tns:breed"></xs:element>
+			<xs:element name="horseage" type="xs:positiveInteger"></xs:element>
 			<xs:element ref="tns:placementfee"></xs:element>
 			<xs:element ref="tns:period"></xs:element>
-			<xs:element ref="tns:owner"></xs:element>
+			<xs:element ref="tns:horseowner"></xs:element>
 		</xs:sequence>
 		<xs:attribute ref="tns:horseID" use="required"></xs:attribute>
+		<xs:attribute ref="tns:stableID" use="required"></xs:attribute>
+		<xs:attribute ref="tns:ownerID" use="required"></xs:attribute>
+		<xs:attribute ref="tns:breed" use="required"></xs:attribute>
+		<xs:attribute ref="tns:gender" use="required"></xs:attribute>
 	</xs:complexType>
 	<xs:key name="horseID">
 		<xs:selector xpath="*"></xs:selector>
@@ -114,11 +167,11 @@
 	</xs:key>
 	<xs:keyref name="stableIDRef" refer="tns:stableID">
 		<xs:selector xpath="root/tns:facility"></xs:selector>
-		<xs:field xpath="@id"></xs:field>
+		<xs:field xpath="@stableID"></xs:field>
 	</xs:keyref>
-	<xs:keyref name="ownerIDRef" refer="tns:ownerID">
+	<xs:keyref name="horseownerIDRef" refer="tns:horseownerID">
 		<xs:selector xpath="root/tns:facility"></xs:selector>
-		<xs:field xpath="@id"></xs:field>
+		<xs:field xpath="@ownerID"></xs:field>
 	</xs:keyref>
 </xs:element>
 
@@ -128,9 +181,9 @@
 			<xs:extension base="tns:contact">
 				<xs:sequence>
 					<xs:element ref="tns:age"></xs:element>
-					<xs:element ref="tns:gender"></xs:element>
 				</xs:sequence>
 				<xs:attribute ref="tns:riderID" use="required"></xs:attribute>
+				<xs:attribute ref="tns:gender" use="required"></xs:attribute>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -140,33 +193,51 @@
 	</xs:key>
 </xs:element>
 
-<xs:element name="owner">
+<xs:element name="facilityowner">
 	<xs:complexType>
 		<xs:complexContent>
 			<xs:extension base="tns:contact">
 				<xs:sequence>
-					<xs:element ref="tns:age"></xs:element>
-					<xs:element ref="tns:gender"></xs:element>
-					<xs:element ref="tns:horse"></xs:element>
+					<xs:element ref="tns:facility" minOccurs="1" maxOccurs="unbounded"></xs:element>
+					<xs:element ref="tns:age" minOccurs="1" maxOccurs="1"></xs:element>
+					<xs:element ref="tns:horse" minOccurs="0" maxOccurs="unbounded"></xs:element>
 				</xs:sequence>
 				<xs:attribute ref="tns:id" use="required"></xs:attribute>
+				<xs:attribute ref="tns:gender" use="optional"></xs:attribute>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:key name="ownerID">
+	<xs:key name="facilityownerID">
 		<xs:selector xpath="root/tns:facility"></xs:selector>
 		<xs:field xpath="@id"></xs:field>
 	</xs:key>
 </xs:element>
 
-<xs:element name="trainingfield">
+<xs:element name="horseowner">
 	<xs:complexType>
-		<xs:sequence>
-			<xs:element ref="tns:fieldtype"></xs:element>
-			<xs:element ref="tns:obstacles"></xs:element>
-		</xs:sequence>
+		<xs:complexContent>
+			<xs:extension base="tns:contact">
+				<xs:sequence>
+					<xs:element ref="tns:age" minOccurs="1" maxOccurs="1"></xs:element>
+					<xs:element ref="tns:horse" minOccurs="1" maxOccurs="unbounded"></xs:element>
+				</xs:sequence>
+				<xs:attribute ref="tns:id" use="required"></xs:attribute>
+				<xs:attribute ref="tns:gender" use="optional"></xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:key name="horseownerID">
+		<xs:selector xpath="root/tns:facility"></xs:selector>
+		<xs:field xpath="@id"></xs:field>
+	</xs:key>
+</xs:element>
+
+<xs:element name="field">
+	<xs:complexType>
 		<xs:attribute ref="tns:id" use="required"></xs:attribute>
+		<xs:attribute ref="tns:fieldtype" use="required"></xs:attribute>
 		<xs:attribute ref="tns:area" use="required"/>
+		<xs:attribute ref="tns:obstacles" use="required"></xs:attribute>
 	</xs:complexType>
 	<xs:key name="fieldID">
 		<xs:selector xpath="root/tns:facility"></xs:selector>
@@ -178,10 +249,10 @@
 	<xs:complexType>
 		<xs:sequence>
 			<xs:element ref="tns:name"></xs:element>
-			<xs:element ref="tns:tournamenttype"></xs:element>
-			<xs:element ref="tns:fieldtype"></xs:element>
+			<xs:element ref="tns:field" minOccurs="1" maxOccurs="unbounded"></xs:element>
 		</xs:sequence>
 		<xs:attribute ref="tns:id" use="required"></xs:attribute>
+		<xs:attribute name="type" type="tns:tournamenttype"></xs:attribute>
 		<xs:attribute ref="tns:duration" use="optional"></xs:attribute>
 	</xs:complexType>
 	<xs:key name="tournamentID">
@@ -193,12 +264,13 @@
 <xs:element name="horsestable">
 	<xs:complexType>
 		<xs:sequence>
-			<xs:element ref="tns:stabletype"></xs:element>
-			<xs:element ref="tns:horsenumber"></xs:element>		
+			<xs:element ref="tns:horse" minOccurs="0" maxOccurs="unbounded"></xs:element>
 		</xs:sequence>
 		<xs:attribute ref="tns:id" use="required"></xs:attribute>
+		<xs:attribute ref="tns:stabletype" use="required"></xs:attribute>
 		<xs:attribute ref="tns:area" use="optional"></xs:attribute>
 		<xs:attribute ref="tns:horseID" use="required"></xs:attribute>
+		<xs:attribute ref="tns:horsenumber" use="optional"></xs:attribute>
 	</xs:complexType>
 	<xs:key name="stableID">
 		<xs:selector xpath="root/tns:facility"></xs:selector>
@@ -210,35 +282,24 @@
 	<xs:complexType>
 		<xs:sequence>
 			<xs:element name="facilityinfo" type="tns:contact" minOccurs="1" maxOccurs="1"></xs:element>
-			<xs:element ref="tns:owner" minOccurs="1" maxOccurs="1"></xs:element>
-			<xs:element ref="tns:horse" maxOccurs="unbounded"></xs:element>
-			<xs:element ref="tns:rider" maxOccurs="unbounded"></xs:element>
-			<xs:element ref="tns:veterinary" minOccurs="1"></xs:element>
-			<xs:element ref="tns:trainingfield" maxOccurs="unbounded"></xs:element>
-			<xs:element ref="tns:tournament" maxOccurs="unbounded"></xs:element>
-			<xs:element ref="tns:horsestable" maxOccurs="unbounded"></xs:element>
+			<xs:element ref="tns:facilityowner" minOccurs="1" maxOccurs="1"></xs:element>
+			<xs:element ref="tns:horse" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			<xs:element ref="tns:rider" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			<xs:element ref="tns:veterinary" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			<xs:element ref="tns:field" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			<xs:element ref="tns:tournament" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			<xs:element ref="tns:horsestable" minOccurs="1" maxOccurs="unbounded"></xs:element>
 		</xs:sequence>
 		<xs:attribute ref="tns:id" use="required"></xs:attribute>
+		<xs:attribute ref="tns:ownerID" use="required"></xs:attribute>
 	</xs:complexType>
 	<xs:key name="facilityID">
 		<xs:selector xpath="*"></xs:selector>
 		<xs:field xpath="@id"></xs:field>
 	</xs:key>
-	<xs:keyref name="tournamentIDRef" refer="tns:tournamentID">
+	<xs:keyref name="facilityownerIDRef" refer="tns:facilityownerID">
 		<xs:selector xpath="*"></xs:selector>
-		<xs:field xpath="@id"></xs:field>
-	</xs:keyref>
-	<xs:keyref name="horseIDRef" refer="tns:horseID">
-		<xs:selector xpath="*"></xs:selector>
-		<xs:field xpath="@id"></xs:field>
-	</xs:keyref>
-	<xs:keyref name="riderIDRef" refer="tns:riderID">
-		<xs:selector xpath="*"></xs:selector>
-		<xs:field xpath="@id"></xs:field>
-	</xs:keyref>
-	<xs:keyref name="fieldIDRef" refer="tns:fieldID">
-		<xs:selector xpath="*"></xs:selector>
-		<xs:field xpath="@id"></xs:field>
+		<xs:field xpath="@ownerID"></xs:field>
 	</xs:keyref>
 </xs:element>
 
