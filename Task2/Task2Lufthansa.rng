@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <grammar 
+        xmlns="http://relaxng.org/ns/structure/1.0" 
+        xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+        datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+        <start combine="choice">
+            <ref name="availableFlights">
+            </ref>
+        </start>
+       
+        <define name="availableFlights">
+            
+            <element name="availableFlights">
+                <ref name="availableFlightsType"/>
+            </element>
+            
+        </define>
+            
+        <define name="flightType">
+            
+            <element name="tripInfo">
+                <ref name="tripInfoType"/>
+            </element>
+            
+            <element name="aircraft">
+                <ref name="aircraftType"/>
+            </element>
+            
+            <oneOrMore>
+                <element name="ticket">
+                    <ref name="ticketType"/>
+                </element>
+            </oneOrMore>
+            
+        </define>
+                
+        <define name="tripInfoType">
+            
+            <element name="departureDateTime">
+                <data type="dateTime"/>
+            </element>
+        
+            <element name="arrivalDateTime">
+                <data type="dateTime"/>
+            </element>
+                
+            <optional>
+                <element name="duration">
+                    <data type="string"/>
+                </element>
+            </optional>
+            
+            <element name="departurePort">
+                <ref name="portType"/>
+            </element>
+        
+            <element name="arrivalPort">
+                <ref name="portType"/>
+            </element>
+        
+            <element name="destination">
+                <ref name="location"/>
+            </element>
+            
+            <element name="departureLocation">
+                <ref name="location"/>
+            </element>
+                
+            <optional>
+                <element name="arrivalTerminal">
+                    <data type="string"/>
+                </element>
+            </optional>
+            
+            <optional>
+                <element name="departureTerminal">
+                    <data type="string"/>
+                </element>
+            </optional>
+        
+            <optional>
+                <element name="arrivalGate">
+                    <data type="int"/>
+                </element>
+            </optional>
+        
+            <optional>
+                <element name="departureGate">
+                    <data type="int"/>
+                </element>
+            </optional>
+        
+            <element name="airline">
+                <ref name="airlineType"/>
+            </element>
+        
+            <element name="availableTickets">
+                <ref name="availableTicketsType"/>
+            </element>
+            
+        </define>
+                
+        <define name="portType">
+            
+            <element name="portCode">
+                <data type="string">
+                    <param name="length">3</param>    
+                </data>
+            </element>
+            
+        </define>
+                
+        <define name="destinationType">
+            <element name="destinationType">
+                <data type="string">
+                </data>
+            </element>
+        </define>
+                
+        <define name="location">
+            
+            <attribute name="country">  
+                <data type="string">
+                    <param name="minLength">1</param>    
+                </data>
+            </attribute>
+
+            <attribute name="city">
+               <data type="string">
+                   <param name="minLength"> 1 </param>    
+               </data>
+            </attribute>
+            
+        </define>
+                
+        <define name="aircraftType">
+            
+                <optional>
+                    <element name="brand">
+                        <data type="string"/>
+                    </element>
+                </optional>
+            
+                <optional>
+                    <element name="model">
+                        <data type="string"/>
+                    </element>
+                </optional>
+            
+                <element name="flightNumber">
+                    <data type="string"/>
+                </element>
+            
+                <element name="numberOfSeats">
+                    <ref name="seatsType"/>
+                </element>
+            
+        </define>
+                
+        <define name="ticketType">
+            
+            <element name="name">
+                <ref name="nameType"/>
+            </element>
+        
+            <element name="euroPrice">
+                <data type="double"/>
+            </element>
+        
+            <element name="class">      
+                <choice>
+                    <value type="string">economy</value>
+                    <value type="string">premium economy</value>
+                    <value type="string">business</value>
+                    <value type="string">first</value>
+                </choice>
+            </element>
+        
+            <element name="baggage">
+                <ref name="baggageType"/>
+            </element>
+            <element name="services">
+                <ref name="serviceType"/>
+            </element>
+        
+            <element name="food">
+                <ref name="foodType"/>
+            </element>
+            
+        </define>
+                
+        <define name="baggageType">
+            
+            <element name="handLuggage">
+                <ref name="bagType"/>
+            </element>
+        
+            <optional>
+                <element name="checked">
+                    <ref name="bagType"/>
+                </element>
+            </optional>
+            
+        </define>
+                      
+        <define name="bagType">
+            
+            <element name="weightLimit">
+                <data type="int"/>
+            </element>
+            
+            <element name="numberLimit">
+                <data type="int"/>
+            </element>
+            
+        </define>
+                
+        <define name="serviceType">
+            
+            <element name="rebooking">
+                <data type="boolean"/>
+            </element>
+            
+            <element name="refund">
+                <data type="boolean"/>
+            </element>
+            
+            <optional>
+              <element name="option">
+                  <choice>
+                      <value type="string">seat reservation</value>
+                      <value type="string">earlier flight</value>
+                      <value type="string">priority lane</value>
+                      <value type="string">priority boarding</value>
+                      <value type="string">lounge</value>
+                      <value type="string">eJournals</value>
+                      <value type="string">empty middle seat</value>
+                  </choice>
+              </element>
+          </optional>
+            
+        </define>
+                
+        <define name="foodType">
+            
+            <element name="snackBeverages">
+                <data type="boolean"/>
+            </element>
+        
+            <element name="meal">
+                <data type="boolean"/>
+            </element>
+            
+        </define>
+                
+        <define name="availableFlightsType">
+            
+            <zeroOrMore>
+                 <element name="flight">
+                    <ref name="flightType"/>
+                 </element>
+            </zeroOrMore>
+            
+        </define>
+                
+        <define name="nameType">
+          
+            <attribute name="seatsAvailable">
+                <data type="int"/>
+            </attribute>
+                    
+        </define>
+                
+        <define name="seatsType">
+            
+            <optional>
+                <element name="economy">
+                    <data type="int"/>
+                </element>
+            </optional>
+        
+            <optional>
+                <element name="business">
+                    <data type="int"/>
+                </element>
+            </optional>
+        
+            <optional>
+                <element name="first">
+                    <data type="int"/>
+                </element>
+            </optional>
+            
+        </define>
+                
+        <define name="airlineType">
+            
+            <optional>
+                <element name="operatedBy">
+                    <data type="string"/>
+                </element>
+            </optional>
+            
+            <element name="carrier">
+                <data type="string"/>
+            </element>
+            
+        </define>
+                    
+        <define name="availableTicketsType">
+            
+            <optional>
+                <element name="economy">
+                    <data type="int"/>
+                </element>
+            </optional>
+            
+            <optional>
+                <element name="business">
+                    <data type="int"/>
+                </element>
+            </optional>
+            
+            <optional>
+                <element name="first">
+                    <data type="int"/>
+                </element>
+            </optional>
+            
+        </define>
+                
+</grammar>

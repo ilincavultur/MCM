@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airlineCompanyDataProvider xmlns:xsi="http://www.w3.org/2001/XMLSchema" Name="Austrian Airliens">
+    <flight>
+        <from>Bucharest</from>
+        <to>Berlin</to>
+        <duration>P1Y1M3DT1H20M0S</duration>
+        <fare>
+            <type>
+                <businessFlex>
+                    <info>
+                        <price currency="Euro">100</price>
+                        <numberOfRemainingSeats>100</numberOfRemainingSeats>
+                        <services>space for feet</services>
+                    </info>
+                </businessFlex>
+                <economyBasic>
+                    <availabilityStatus>Sold out</availabilityStatus>
+                </economyBasic>
+            </type>
+        </fare>
+        <totalTraveltime>P1Y1M3DT1H20M0S</totalTraveltime>
+        <flightType>
+            <connecting>
+                <numberOfStops>1</numberOfStops>
+                <flightDetails flightNumber="VA200">
+                    <departure>
+                        <departureAirport>
+                            <departureAirportName>Bucharest International Airport</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2022-05-09</departureDate>
+                        <localDepartureTime>18:01:01.001</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Vienna International Airport</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2022-05-09</arrivalDate>
+                        <localArrivalTime>20:01:01.001</localArrivalTime>
+                    </arrival>
+                    <typeOfAircraft>Turboprop</typeOfAircraft>
+                    <Carrier>Regional</Carrier>
+                    <operatedBy>Austrian Airlines</operatedBy>
+                    <timeSchedule>
+                    <TravelTime>P1Y1M3DT1H20M0S</TravelTime>
+                    
+                    </timeSchedule>
+                </flightDetails>
+                
+                <flightDetails flightNumber="AB300">
+                    <departure>
+                        <departureAirport>
+                            <departureAirportName>Vienna International Airport</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2019-05-04</departureDate>
+                        <localDepartureTime>21:01:01.001</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Berlin International Airport</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2021-05-04</arrivalDate>
+                        <localArrivalTime>23:01:01.001</localArrivalTime>
+                    </arrival>
+                    <typeOfAircraft>Airbus</typeOfAircraft>
+                    <Carrier>Austrian Airlines</Carrier>
+                    <operatedBy>Austrian Airlines</operatedBy>
+                    <timeSchedule>
+                        <TravelTime>P1Y1M3DT1H20M0S</TravelTime>
+                    </timeSchedule>
+                </flightDetails>
+            </connecting>
+        </flightType>
+    </flight>
+    
+     <flight>
+        <from>Vienna</from>
+        <to>Paris</to>
+        <duration>P1Y2M3DT1H20M0S</duration>
+        <fare>
+            <type>
+                <businessFlex>
+                    <info>
+                        <price currency="Euro">180</price>
+                        <numberOfRemainingSeats>120</numberOfRemainingSeats>
+                        <services>free return</services>
+                    </info>
+                </businessFlex>
+                <economyBasic>
+                    <availabilityStatus>Sold out</availabilityStatus>
+                </economyBasic>
+            </type>
+        </fare>
+        <totalTraveltime>P1Y2M3DT1H20M0S</totalTraveltime>
+        <flightType>
+            <nonStop>
+	            <flightDetails flightNumber="AK205">
+                    <departure>
+                        <departureAirport>
+                            <departureAirportName>Vienna International Airport</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2021-05-11</departureDate>
+                        <localDepartureTime>01:01:01.001</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Paris International Airport</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2021-05-11</arrivalDate>
+                        <localArrivalTime>02:01:01.001</localArrivalTime>
+                    </arrival>
+                    <typeOfAircraft>Turboprop</typeOfAircraft>
+                    <Carrier>Regional</Carrier>
+                    <operatedBy>Austrian Airlines</operatedBy>
+                    <timeSchedule>
+                        <TravelTime>P1Y2M3DT1H20M0S</TravelTime>
+                    </timeSchedule>
+	            </flightDetails>
+            </nonStop>
+        </flightType>
+    </flight>
+    
+    <flight>
+        <from>Vienna</from>
+        <to>New York</to>
+        <duration>P1Y2M3DT1H15M0S</duration>
+        <fare>
+            <type>
+                <businessFlex>
+                    <availabilityStatus>Sold out</availabilityStatus>
+                </businessFlex>
+                <premiumEconomyFlex>
+                    <info>
+                        <price currency="Euro">160</price>
+                        <numberOfRemainingSeats>120</numberOfRemainingSeats>
+                        <services>free wifi</services>
+                    </info>
+                </premiumEconomyFlex>
+            </type>
+        </fare>
+        <totalTraveltime>P1Y2M3DT1H15M0S</totalTraveltime>
+        <flightType>
+            <connecting>
+                <numberOfStops>1</numberOfStops>
+                <flightDetails flightNumber="AS210">
+                    <departure>
+                        <departureAirport>
+                            <departureAirportName>Vienna International Airport</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2021-05-11</departureDate>
+                        <localDepartureTime>01:01:01.001</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Amsterdam International Airport</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2021-05-11</arrivalDate>
+                        <localArrivalTime>02:01:01.001</localArrivalTime>
+                    </arrival>
+                    <typeOfAircraft>Airbus</typeOfAircraft>
+                    <Carrier>Regional</Carrier>
+                    <operatedBy>Austrian Airlines</operatedBy>
+                    <timeSchedule>
+                      
+                    </timeSchedule>
+                </flightDetails>
+                <flightDetails flightNumber="AR215">
+                    <departure>
+                        <departureAirport>
+                            <departureAirportName>Amsterdam International Airport</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2005-05-09</departureDate>
+                        <localDepartureTime>03:01:01.001</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>New York</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2022-05-09</arrivalDate>
+                        <localArrivalTime>05:01:01.001</localArrivalTime>
+                    </arrival>
+                    <typeOfAircraft>Airbus</typeOfAircraft>
+                    <Carrier>Regional</Carrier>
+                    <operatedBy>Austrian Airlines</operatedBy>
+                    <timeSchedule>
+                        <TravelTime>P1Y2M3DT1H15M0S</TravelTime>
+                    </timeSchedule>
+                </flightDetails>
+            </connecting>
+        </flightType>
+    </flight>
+</airlineCompanyDataProvider>

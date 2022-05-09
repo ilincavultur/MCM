@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<availableFlights xmlns="http://www.example.org/Lufthansa_XML_Schema">
+  <flight>
+    
+    <tripInfo>
+      <departureDateTime>2022-05-17T01:43:38.88</departureDateTime>
+      <arrivalDateTime>2022-05-17T18:16:01.74</arrivalDateTime>
+      <departurePort>
+        <portCode>aso</portCode>
+      </departurePort>
+      <arrivalPort>
+        <portCode>ask</portCode>
+      </arrivalPort>
+      <destination />
+      <departureLocation />
+      <airline>
+        <carrier>Regional</carrier>
+      </airline>
+      <availableTickets />
+    </tripInfo>
+    
+    <aircraft>
+      <flightNumber>AU1S2</flightNumber>
+      <numberOfSeats />
+    </aircraft>
+    
+    <ticket>
+      <name>TicketName1</name>
+      <euroPrice>140.50</euroPrice>
+      <class>economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>10</weightLimit>
+          <numberLimit>3</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>false</rebooking>
+        <refund>false</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName2</name>
+      <euroPrice>200.75</euroPrice>
+      <class>first</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>30</weightLimit>
+          <numberLimit>3</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>true</rebooking>
+        <refund>true</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>true</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName3</name>
+      <euroPrice>220.0</euroPrice>
+      <class>first</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>30</weightLimit>
+          <numberLimit>4</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>true</rebooking>
+        <refund>true</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>true</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName4</name>
+      <euroPrice>300</euroPrice>
+      <class>business</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>30</weightLimit>
+          <numberLimit>3</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>true</rebooking>
+        <refund>true</refund>
+      </services>
+      <food>
+        <snackBeverages>false</snackBeverages>
+        <meal>true</meal>
+      </food>
+    </ticket>
+  </flight>
+  
+  <flight>
+    <tripInfo>
+      <departureDateTime>2021-02-17T16:28:06.99</departureDateTime>
+      <arrivalDateTime>2021-02-22T22:51:15.83</arrivalDateTime>
+      <departurePort>
+        <portCode>asd</portCode>
+      </departurePort>
+      <arrivalPort>
+        <portCode>adg</portCode>
+      </arrivalPort>
+      <destination />
+      <departureLocation />
+      <airline>
+        <carrier>Regional</carrier>
+      </airline>
+      <availableTickets />
+    </tripInfo>
+    <aircraft>
+      <flightNumber>A8W9D</flightNumber>
+      <numberOfSeats />
+    </aircraft>
+    
+    <ticket>
+      <name>TicketName5</name>
+      <euroPrice>120</euroPrice>
+      <class>economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>10</weightLimit>
+          <numberLimit>2</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>false</rebooking>
+        <refund>false</refund>
+      </services>
+      <food>
+        <snackBeverages>false</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+  </flight>
+  
+  <flight>
+    <tripInfo>
+      <departureDateTime>2008-11-12T11:06:56.77</departureDateTime>
+      <arrivalDateTime>1976-12-10T14:18:25.97</arrivalDateTime>
+      <departurePort>
+        <portCode>csd</portCode>
+      </departurePort>
+      <arrivalPort>
+        <portCode>dfe</portCode>
+      </arrivalPort>
+      <destination />
+      <departureLocation />
+      <airline>
+        <carrier>Regional</carrier>
+      </airline>
+      <availableTickets />
+    </tripInfo>
+    
+    <aircraft>
+      <flightNumber>I9Ol1</flightNumber>
+      <numberOfSeats />
+    </aircraft>
+    
+    <ticket>
+      <name>TicketName6</name>
+      <euroPrice>200</euroPrice>
+      <class>business</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>12</weightLimit>
+          <numberLimit>3</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>true</rebooking>
+        <refund>0</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName7</name>
+      <euroPrice>120</euroPrice>
+      <class>first</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>30</weightLimit>
+          <numberLimit>2</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>1</rebooking>
+        <refund>1</refund>
+      </services>
+      <food>
+        <snackBeverages>false</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName8</name>
+      <euroPrice>120</euroPrice>
+      <class>economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>30</weightLimit>
+          <numberLimit>4</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>false</rebooking>
+        <refund>0</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName9</name>
+      <euroPrice>40</euroPrice>
+      <class>premium economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>10</weightLimit>
+          <numberLimit>2</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>false</rebooking>
+        <refund>true</refund>
+      </services>
+      <food>
+        <snackBeverages>false</snackBeverages>
+        <meal>true</meal>
+      </food>
+    </ticket>
+  </flight>
+  
+  <flight>
+    <tripInfo>
+      <departureDateTime>1990-03-13T01:53:08.30</departureDateTime>
+      <arrivalDateTime>2000-06-10T12:05:41.81</arrivalDateTime>
+      <departurePort>
+        <portCode>oko</portCode>
+      </departurePort>
+      <arrivalPort>
+        <portCode>dfj</portCode>
+      </arrivalPort>
+      <destination />
+      <departureLocation />
+      <airline>
+        <carrier>Regional</carrier>
+      </airline>
+      <availableTickets />
+    </tripInfo>
+    
+    <aircraft>
+      <flightNumber>I2O1J</flightNumber>
+      <numberOfSeats />
+    </aircraft>
+    
+    <ticket>
+      <name>TicketName10</name>
+      <euroPrice>100</euroPrice>
+      <class>economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>12</weightLimit>
+          <numberLimit>1</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>false</rebooking>
+        <refund>false</refund>
+      </services>
+      <food>
+        <snackBeverages>false</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName11</name>
+      <euroPrice>240</euroPrice>
+      <class>business</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>20</weightLimit>
+          <numberLimit>2</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>false</rebooking>
+        <refund>true</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>true</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName12</name>
+      <euroPrice>150</euroPrice>
+      <class>premium economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>20</weightLimit>
+          <numberLimit>3</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>true</rebooking>
+        <refund>false</refund>
+      </services>
+      <food>
+        <snackBeverages>true</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+    
+    <ticket>
+      <name>TicketName13</name>
+      <euroPrice>150</euroPrice>
+      <class>premium economy</class>
+      <baggage>
+        <handLuggage>
+          <weightLimit>25</weightLimit>
+          <numberLimit>2</numberLimit>
+        </handLuggage>
+      </baggage>
+      <services>
+        <rebooking>true</rebooking>
+        <refund>true</refund>
+      </services>
+      <food>
+        <snackBeverages>false</snackBeverages>
+        <meal>false</meal>
+      </food>
+    </ticket>
+  </flight>
+</availableFlights>
