@@ -216,10 +216,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/American.xsl</String>
+                                    <String>file:/Users/ilincavultur/Desktop/6.%20Semester/MCM/11925311-ilinca-vultur/American.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/AmericanAirlinesInstance.xml</String>
+                                    <String>file:/Users/ilincavultur/Desktop/6.%20Semester/MCM/11925311-ilinca-vultur/AmericanAirlinesInstance.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -299,10 +299,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/Austrian.xsl</String>
+                                    <String>${pdu}/Austrian.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/AustrianAirlinesInstance.xml</String>
+                                    <String>${pdu}/AustrianAirlinesInstance.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -382,10 +382,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/Lufthansa.xsl</String>
+                                    <String>${pdu}/Lufthansa.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/LufthansaInstance.xml</String>
+                                    <String>${pdu}/LufthansaInstance.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -548,7 +548,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/eighth.xquery</String>
+                                    <String>${pdu}/eighth.xquery</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -631,7 +631,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/first.xquery</String>
+                                    <String>${pdu}/first.xquery</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -714,7 +714,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/seventh.xquery</String>
+                                    <String>${pdu}/seventh.xquery</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -797,7 +797,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/sixth.xquery</String>
+                                    <String>${pdu}/sixth.xquery</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -880,7 +880,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Assignment2/third.xquery</String>
+                                    <String>${pdu}/third.xquery</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>

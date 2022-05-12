@@ -5,6 +5,7 @@ merge.xsl: https://www.oxygenxml.com/forum/topic11375.html#:~:text=To%20use%20th
 Comments for checking my assignment:
 
 I used the Oxygen Editor for this assignment. The project is called Assignment2.xpr
+Each task's files are found in the respective folders. All the files are also copied in the same place as the Assignment2.xpr project, because otherwise Oxygen couldn't find the files. 
 
 Task1
 No comments

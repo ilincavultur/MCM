@@ -56,7 +56,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>file:/Users/ilincavultur/Desktop/MCMAssignments/Task6Merge/merge.xsl</String>
+                                    <String>file:/Users/ilincavultur/Desktop/6.%20Semester/MCM/11925311-ilinca-vultur/merge.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airlineCompanyDataProvider xmlns:xsi="http://www.w3.org/2001/XMLSchema" Name="American Airlines">
+    
+    
+    <flight>
+        <depart>Washington</depart>
+        <to>Los Angeles</to>
+        <flightCatergory>
+            <nonStop>
+                <flightDetails flightNumber="AA11">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ABC">
+                            <departureAirportName>Washington International</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2020-05-17</departureDate>
+                        <departureTime>23:13:37.78</departureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Los Angeles International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2020-05-18</arrivalDate>
+                        <arrivalTime>03:48:13.62</arrivalTime>
+                    </arrival>
+                    <Aircraft>Turbo Prop</Aircraft>
+                    <operatedBy>American Airlines</operatedBy>
+                    <travelInfo>
+                        <travelTime>P1DT2H</travelTime>
+                    </travelInfo>
+                </flightDetails>
+            </nonStop>
+        </flightCatergory>
+        <duration>P1DT2H</duration>
+        <fare>
+            
+            <type>
+                <premiumEconomyFlexible>
+                    <info>
+                        <price currency="United States Dollar">240</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>Free choosing of seats</services>
+                    </info>
+                </premiumEconomyFlexible>
+                <premiumEconomy>
+                    <info>
+                        <price currency="United States Dollar">70</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>Free WiFi</services>
+                    </info>
+                </premiumEconomy>
+            </type>
+        </fare>
+        <totalTraveltime>P1DT2H</totalTraveltime>
+    </flight>
+    
+    <flight>
+        <depart>New York</depart>
+        <to>Los Angeles</to>
+        <flightCatergory>
+            <nonStop>
+                <flightDetails flightNumber="AA222">
+                    <departure>
+                        <departureAirport departureIATAairportCode="AAA">
+                            <departureAirportName>New York International</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2021-07-02</departureDate>
+                        <departureTime>03:48:13.62</departureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Los Angeles International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2021-07-02</arrivalDate>
+                        <arrivalTime>05:01:01.001</arrivalTime>
+                    </arrival>
+                    <Aircraft>Turbo Prop</Aircraft>
+                    <operatedBy>American Airlines</operatedBy>
+                    <travelInfo>
+                        <travelTime>P1DT5H</travelTime>
+                    </travelInfo>
+                </flightDetails>
+            </nonStop>
+        </flightCatergory>
+        <duration>P1DT5H</duration>
+        <fare>
+            <status>Not available</status>
+            
+        </fare>
+        <totalTraveltime>P1DT5H</totalTraveltime>
+    </flight>
+    
+    <flight>
+        <depart>Boston</depart>
+        <to>Chicago</to>
+        <flightCatergory>
+            <nonStop>
+                <flightDetails flightNumber="AA10">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ACD">
+                            <departureAirportName>Boston International</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2021-05-04</departureDate>
+                        <departureTime>02:02:01.001</departureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Chicago International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2021-05-04</arrivalDate>
+                        <arrivalTime>04:04:01.001</arrivalTime>
+                    </arrival>
+                    <Aircraft>Turbo Prop</Aircraft>
+                    <operatedBy>American Airlines</operatedBy>
+                    <travelInfo>
+                        <travelTime>P0DT3H</travelTime>
+                    </travelInfo>
+                </flightDetails>
+            </nonStop>
+        </flightCatergory>
+        <duration>P0DT3H</duration>
+        <fare>
+            
+            <type>
+                <premiumEconomyFlexible>
+                    <info>
+                        <price currency="United States Dollar">240</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>Free choosing of seats</services>
+                    </info>
+                </premiumEconomyFlexible>
+                <premiumEconomy>
+                    <info>
+                        <price currency="United States Dollar">70</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>Free WiFi</services>
+                    </info>
+                </premiumEconomy>
+            </type>
+        </fare>
+        <totalTraveltime>P0DT3H</totalTraveltime>
+    </flight>
+    
+    <flight>
+        <depart>Boston</depart>
+        <to>Chicago</to>
+        <flightCatergory>
+            <nonStop>
+                <flightDetails flightNumber="AB11">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ACD">
+                            <departureAirportName>Boston International</departureAirportName>
+                        </departureAirport>
+                        <departureDate>2019-07-04</departureDate>
+                        <departureTime>23:13:37.78</departureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Chicago International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalDate>2019-07-05</arrivalDate>
+                        <arrivalTime>04:04:01.001</arrivalTime>
+                    </arrival>
+                    <Aircraft>Turbo Prop</Aircraft>
+                    <operatedBy>American Airlines</operatedBy>
+                    <travelInfo>
+                        <travelTime>P2DT7H</travelTime>
+                    </travelInfo>
+                </flightDetails>
+            </nonStop>
+        </flightCatergory>
+        <duration>P2DT7H</duration>
+        <fare>
+            <status>Not available</status>
+            
+        </fare>
+        <totalTraveltime>P2DT7H</totalTraveltime>
+    </flight>
+    
+</airlineCompanyDataProvider>
