@@ -14,7 +14,7 @@ Task2
 Validate with right click -> Validate
 
 Task3
-To validate the XML instances against the corresponding XSDs, please open a terminal in the project:
+To validate the XML instances against the corresponding XSDs, please open a terminal in the project (where the oxygen Assignment2.xpr project is):
 
 For the American Airlines XML: 
 java XSDValidator.java AmericanAirlines.xsd AmericanAirlinesInstance.xml 
