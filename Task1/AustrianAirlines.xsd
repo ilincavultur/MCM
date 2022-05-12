@@ -4,28 +4,28 @@
         <xs:choice>
             <xs:element name="availabilityStatus" type="xs:string" fixed="Sold out"/>
             <xs:element name="info">
-               <xs:complexType>
-                   <xs:sequence>
-                       <xs:element name="price">
-                           <xs:complexType>
-                               <xs:simpleContent>
-                                   <xs:extension base="xs:decimal">
-                                       <xs:attribute name="currency" type="xs:string" fixed="Euro" use="required"/>
-                                   </xs:extension>
-                               </xs:simpleContent>
-                           </xs:complexType>
-                       </xs:element>
-                       <xs:element name="numberOfRemainingSeats">
-                           <xs:simpleType>
-                               <xs:restriction base="xs:integer">
-                                   <xs:minInclusive value="1"/>
-                                   <xs:maxInclusive value="300"/>
-                               </xs:restriction>
-                           </xs:simpleType>
-                       </xs:element>
-                       <xs:element name="services" type="xs:string"/>
-                   </xs:sequence>
-               </xs:complexType> 
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="price">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:decimal">
+                                        <xs:attribute name="currency" type="xs:string" fixed="Euro" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="numberOfRemainingSeats">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="300"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="services" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType> 
             </xs:element>
         </xs:choice>
     </xs:group>

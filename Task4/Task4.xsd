@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" >
+    
+    <xs:element name="airlineCompanyDataProvider">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="flight"/>
+            </xs:sequence>
+            <xs:attribute name="Name" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="flight">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="from" type="location"/>
+                <xs:element name="to" type="location"/>
+                <xs:element name="duration" type="xs:duration"/>
+                <xs:element ref="fare"/>
+                <xs:element name="totalTraveltime" type="xs:duration"/>
+                <xs:element minOccurs="0" ref="flightType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:complexType name="location">
+        <xs:sequence>
+            <xs:element name="country" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+            
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    
+    <xs:element name="duration" type="xs:duration"/>
+    
+    <xs:element name="fare">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="status"/>
+                <xs:element ref="ticketType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="status" type="xs:string"/>
+    
+    <xs:element name="ticketType">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" name="economySaver" type="TicketTypeInfo" />
+                <xs:element minOccurs="0" name="economy" type="TicketTypeInfo" />
+                <xs:element minOccurs="0" name="business" type="TicketTypeInfo" />
+                <xs:element minOccurs="0" name="first" type="TicketTypeInfo" />
+                <xs:element minOccurs="0" name="premiumEconomy" type="TicketTypeInfo"/>
+                <xs:element minOccurs="0" name="businessFlex" type="TicketTypeInfo"/>
+                <xs:element minOccurs="0" name="economyBasic" type="TicketTypeInfo"/>
+                <xs:element minOccurs="0" name="businessSaver" type="TicketTypeInfo"/>
+                <xs:element minOccurs="0" name="premiumEconomyFlex" type="TicketTypeInfo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="TicketTypeInfo">
+        <xs:sequence>
+            <xs:element ref="availabilityStatus"/>
+            <xs:element ref="info"/>
+            <xs:element ref="seatType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="seatType">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="economy" type="xs:int" maxOccurs="1" minOccurs="0"></xs:element>
+                <xs:element name="business" type="xs:int" maxOccurs="1" minOccurs="0"></xs:element>
+                <xs:element name="first" type="xs:int" maxOccurs="1" minOccurs="0"></xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="baggage" type="baggageType"/>
+    <xs:element name="services" type="serviceType"/>
+    <xs:element name="food" type="foodType"/>
+    
+    <xs:complexType name="baggageType">
+        <xs:sequence>
+            <xs:element name="handLuggage" type="bagType" maxOccurs="1" minOccurs="1"></xs:element>
+            <xs:element name="checked" type="bagType" maxOccurs="1" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="bagType">
+        <xs:sequence>
+            <xs:element name="weightLimit" type="xs:int" maxOccurs="1" minOccurs="1"></xs:element>
+            <xs:element name="numberLimit" type="xs:int" maxOccurs="1" minOccurs="1"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="serviceType">
+        <xs:sequence>
+            <xs:element ref="baggage"></xs:element>
+            <xs:element ref="food"></xs:element>
+            <xs:element name="rebooking" type="xs:boolean" maxOccurs="1"
+                minOccurs="1">
+            </xs:element>
+            <xs:element name="refund" type="xs:boolean" maxOccurs="1"
+                minOccurs="1">
+            </xs:element>
+            <xs:element name="option" maxOccurs="7"
+                minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="no option"></xs:enumeration>
+                        <xs:enumeration value="Free choosing of seats"></xs:enumeration>
+                        <xs:enumeration value="Free WiFi"></xs:enumeration>
+                        <xs:enumeration value="free wifi"></xs:enumeration>
+                        <xs:enumeration value="space for feet"></xs:enumeration>
+                        <xs:enumeration value="seat reservation"></xs:enumeration>
+                        <xs:enumeration value="earlier flight"></xs:enumeration>
+                        <xs:enumeration value="priority lane"></xs:enumeration>
+                        <xs:enumeration value="priority boarding"></xs:enumeration>
+                        <xs:enumeration value="lounge"></xs:enumeration>
+                        <xs:enumeration value="eJournals"></xs:enumeration>
+                        <xs:enumeration value="empty middle seat"></xs:enumeration>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="foodType">
+        <xs:sequence>
+            <xs:element name="snackBeverages" type="xs:boolean" maxOccurs="1" minOccurs="1"></xs:element>
+            <xs:element name="meal" type="xs:boolean" maxOccurs="1" minOccurs="1"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:element name="flightType">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="nonStop"/>
+                <xs:element ref="connecting"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="connecting">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numberOfStops" type="xs:integer"/>
+                <xs:element maxOccurs="unbounded" ref="flightDetails"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="nonStop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="flightDetails"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="price"/>
+                <xs:element ref="numberOfRemainingSeats"/>
+                <xs:element ref="services" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="price">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="currency" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="numberOfRemainingSeats" type="xs:integer"/>
+    <xs:element name="availabilityStatus" type="xs:string"/>
+    
+    <xs:element name="flightDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="departure"/>
+                <xs:element ref="arrival"/>
+                <xs:element ref="Airline"></xs:element>
+                <xs:choice>
+                    <xs:element ref="timeSchedule"/>
+                    <xs:element ref="travelInfo"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="flightNumber" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="departure">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="departureAirport"/>
+                <xs:element name="departureTerminal" type="xs:string"/>
+                <xs:element name="departureGate" type="xs:string"/>
+                <xs:element name="departureDate" type="xs:date"/>
+                <xs:element name="departureTime" type="xs:time"/>
+                <xs:element name="localDepartureTime" type="xs:time"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="departureAirport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="departureAirportName" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="departureIATAairportCode" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="arrival">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="arrivalAirport"/>
+                <xs:element name="arrivalTerminal" type="xs:string"/>
+                <xs:element name="arrivalGate" type="xs:string"/>
+                <xs:element name="arrivalDate" type="xs:date"/>
+                <xs:element name="arrivalTime" type="xs:time"/>
+                <xs:element name="localArrivalTime" type="xs:time"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="arrivalAirport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="arrivalAirportName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="Airline" type="AirlineDetails"/>
+    <xs:complexType name="AirlineDetails">
+        <xs:sequence>
+            <xs:element name="carrier" type="xs:string"></xs:element>
+            <xs:element name="operatedBy" type="xs:string"/>
+            <xs:element name="AirCraft" type="AircraftType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="AircraftType">
+        <xs:sequence>
+            <xs:element name="brand" type="xs:string" maxOccurs="1"
+                minOccurs="0">
+            </xs:element>
+            <xs:element name="model" type="xs:string" maxOccurs="1"
+                minOccurs="0">
+            </xs:element>
+            <xs:element name="flightNumber" type="xs:string" maxOccurs="1"
+                minOccurs="1">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    
+    <xs:element name="timeSchedule">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="TravelTime"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="TravelTime" type="xs:duration"/>
+    
+    <xs:element name="travelInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="TravelTime"/>
+                <xs:element minOccurs="0" ref="connectionTime"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="travelTime" type="xs:duration"/>
+    <xs:element name="connectionTime" type="xs:duration"/>
+    
+</xs:schema>

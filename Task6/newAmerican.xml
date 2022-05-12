@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><airlineCompanyDataProvider xmlns:xsi="http://www.w3.org/2001/XMLSchema" Name="American Airlines">
+    <flight>
+        <from>
+            <country/>
+            <city>Washington</city>
+        </from>
+        <to>
+            <country/>
+            <city>Los Angeles</city>
+        </to>
+        <duration>P1DT2H</duration>
+        <fare>
+            <ticketType>
+                <premiumEconomy>
+                    <availabilityStatus>150</availabilityStatus>
+                    <info>
+                        <price currency="United States Dollar">70</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>
+                            <baggage>
+                                <handLuggage>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </handLuggage>
+                                <checked>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </checked>
+                            </baggage>
+                            <food>
+                                <snackBeverages>0</snackBeverages>
+                                <meal>0</meal>
+                            </food>
+                            <rebooking>0</rebooking>
+                            <refund>0</refund>
+                            <option>Free WiFi</option>
+                        </services>
+                    </info>
+                    <seatType/>
+                </premiumEconomy>
+                <premiumEconomyFlex>
+                    <availabilityStatus>150</availabilityStatus>
+                    <info>
+                        <price currency="United States Dollar">240</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>
+                            <baggage>
+                                <handLuggage>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </handLuggage>
+                                <checked>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </checked>
+                            </baggage>
+                            <food>
+                                <snackBeverages>0</snackBeverages>
+                                <meal>0</meal>
+                            </food>
+                            <rebooking>0</rebooking>
+                            <refund>0</refund>
+                            <option>Free choosing of seats</option>
+                        </services>
+                    </info>
+                    <seatType/>
+                </premiumEconomyFlex>
+            </ticketType>
+        </fare>
+        <totalTraveltime>P1DT2H</totalTraveltime>
+        <flightType>
+            <nonStop>
+                <flightDetails flightNumber="AA11">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ABC">
+                            <departureAirportName>Washington International</departureAirportName>
+                        </departureAirport>
+                        <departureTerminal>departureTerminal</departureTerminal>
+                        <departureGate>departureGate</departureGate>
+                        <departureDate>2020-05-17</departureDate>
+                        <departureTime>23:13:37.78</departureTime>
+                        <localDepartureTime>23:13:37.78</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Los Angeles International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalTerminal>arrivalTerminal</arrivalTerminal>
+                        <arrivalGate>arrivalGate</arrivalGate>
+                        <arrivalDate>2020-05-18</arrivalDate>
+                        <arrivalTime>03:48:13.62</arrivalTime>
+                        <localArrivalTime>03:48:13.62</localArrivalTime>
+                    </arrival>
+                    <Airline>
+                        <carrier>carrier</carrier>
+                        <operatedBy>American Airlines</operatedBy>
+                        <AirCraft>
+                            <brand/>
+                            <model>Turbo Prop</model>
+                            <flightNumber>AA11</flightNumber>
+                        </AirCraft>
+                    </Airline>
+                    <timeSchedule>
+                        <TravelTime>P1DT2H</TravelTime>
+                    </timeSchedule>
+                </flightDetails>
+            </nonStop>
+        </flightType>
+    </flight>
+    
+    <flight>
+        <from>
+            <country/>
+            <city>New York</city>
+        </from>
+        <to>
+            <country/>
+            <city>Los Angeles</city>
+        </to>
+        <duration>P1DT5H</duration>
+        <fare>
+            <status>Not available</status>
+        </fare>
+        <totalTraveltime>P1DT5H</totalTraveltime>
+        <flightType>
+            <nonStop>
+                <flightDetails flightNumber="AA222">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ABC">
+                            <departureAirportName>New York International</departureAirportName>
+                        </departureAirport>
+                        <departureTerminal>departureTerminal</departureTerminal>
+                        <departureGate>departureGate</departureGate>
+                        <departureDate>2021-07-02</departureDate>
+                        <departureTime>03:48:13.62</departureTime>
+                        <localDepartureTime>03:48:13.62</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Los Angeles International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalTerminal>arrivalTerminal</arrivalTerminal>
+                        <arrivalGate>arrivalGate</arrivalGate>
+                        <arrivalDate>2021-07-02</arrivalDate>
+                        <arrivalTime>05:01:01.001</arrivalTime>
+                        <localArrivalTime>05:01:01.001</localArrivalTime>
+                    </arrival>
+                    <Airline>
+                        <carrier>carrier</carrier>
+                        <operatedBy>American Airlines</operatedBy>
+                        <AirCraft>
+                            <brand/>
+                            <model>Turbo Prop</model>
+                            <flightNumber>AA222</flightNumber>
+                        </AirCraft>
+                    </Airline>
+                    <timeSchedule>
+                        <TravelTime>P1DT5H</TravelTime>
+                    </timeSchedule>
+                </flightDetails>
+            </nonStop>
+        </flightType>
+    </flight>
+    
+    <flight>
+        <from>
+            <country/>
+            <city>Boston</city>
+        </from>
+        <to>
+            <country/>
+            <city>Chicago</city>
+        </to>
+        <duration>P0DT3H</duration>
+        <fare>
+            <ticketType>
+                <premiumEconomy>
+                    <availabilityStatus>150</availabilityStatus>
+                    <info>
+                        <price currency="United States Dollar">70</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>
+                            <baggage>
+                                <handLuggage>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </handLuggage>
+                                <checked>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </checked>
+                            </baggage>
+                            <food>
+                                <snackBeverages>0</snackBeverages>
+                                <meal>0</meal>
+                            </food>
+                            <rebooking>0</rebooking>
+                            <refund>0</refund>
+                            <option>Free WiFi</option>
+                        </services>
+                    </info>
+                    <seatType/>
+                </premiumEconomy>
+                <premiumEconomyFlex>
+                    <availabilityStatus>150</availabilityStatus>
+                    <info>
+                        <price currency="United States Dollar">240</price>
+                        <numberOfRemainingSeats>150</numberOfRemainingSeats>
+                        <services>
+                            <baggage>
+                                <handLuggage>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </handLuggage>
+                                <checked>
+                                    <weightLimit>0</weightLimit>
+                                    <numberLimit>0</numberLimit>
+                                </checked>
+                            </baggage>
+                            <food>
+                                <snackBeverages>0</snackBeverages>
+                                <meal>0</meal>
+                            </food>
+                            <rebooking>0</rebooking>
+                            <refund>0</refund>
+                            <option>Free choosing of seats</option>
+                        </services>
+                    </info>
+                    <seatType/>
+                </premiumEconomyFlex>
+            </ticketType>
+        </fare>
+        <totalTraveltime>P0DT3H</totalTraveltime>
+        <flightType>
+            <nonStop>
+                <flightDetails flightNumber="AA10">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ABC">
+                            <departureAirportName>Boston International</departureAirportName>
+                        </departureAirport>
+                        <departureTerminal>departureTerminal</departureTerminal>
+                        <departureGate>departureGate</departureGate>
+                        <departureDate>2021-05-04</departureDate>
+                        <departureTime>02:02:01.001</departureTime>
+                        <localDepartureTime>02:02:01.001</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Chicago International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalTerminal>arrivalTerminal</arrivalTerminal>
+                        <arrivalGate>arrivalGate</arrivalGate>
+                        <arrivalDate>2021-05-04</arrivalDate>
+                        <arrivalTime>04:04:01.001</arrivalTime>
+                        <localArrivalTime>04:04:01.001</localArrivalTime>
+                    </arrival>
+                    <Airline>
+                        <carrier>carrier</carrier>
+                        <operatedBy>American Airlines</operatedBy>
+                        <AirCraft>
+                            <brand/>
+                            <model>Turbo Prop</model>
+                            <flightNumber>AA10</flightNumber>
+                        </AirCraft>
+                    </Airline>
+                    <timeSchedule>
+                        <TravelTime>P0DT3H</TravelTime>
+                    </timeSchedule>
+                </flightDetails>
+            </nonStop>
+        </flightType>
+    </flight>
+    
+    <flight>
+        <from>
+            <country/>
+            <city>Boston</city>
+        </from>
+        <to>
+            <country/>
+            <city>Chicago</city>
+        </to>
+        <duration>P2DT7H</duration>
+        <fare>
+            <status>Not available</status>
+        </fare>
+        <totalTraveltime>P2DT7H</totalTraveltime>
+        <flightType>
+            <nonStop>
+                <flightDetails flightNumber="AB11">
+                    <departure>
+                        <departureAirport departureIATAairportCode="ABC">
+                            <departureAirportName>Boston International</departureAirportName>
+                        </departureAirport>
+                        <departureTerminal>departureTerminal</departureTerminal>
+                        <departureGate>departureGate</departureGate>
+                        <departureDate>2019-07-04</departureDate>
+                        <departureTime>23:13:37.78</departureTime>
+                        <localDepartureTime>23:13:37.78</localDepartureTime>
+                    </departure>
+                    <arrival>
+                        <arrivalAirport>
+                            <arrivalAirportName>Chicago International</arrivalAirportName>
+                        </arrivalAirport>
+                        <arrivalTerminal>arrivalTerminal</arrivalTerminal>
+                        <arrivalGate>arrivalGate</arrivalGate>
+                        <arrivalDate>2019-07-05</arrivalDate>
+                        <arrivalTime>04:04:01.001</arrivalTime>
+                        <localArrivalTime>04:04:01.001</localArrivalTime>
+                    </arrival>
+                    <Airline>
+                        <carrier>carrier</carrier>
+                        <operatedBy>American Airlines</operatedBy>
+                        <AirCraft>
+                            <brand/>
+                            <model>Turbo Prop</model>
+                            <flightNumber>AB11</flightNumber>
+                        </AirCraft>
+                    </Airline>
+                    <timeSchedule>
+                        <TravelTime>P2DT7H</TravelTime>
+                    </timeSchedule>
+                </flightDetails>
+            </nonStop>
+        </flightType>
+    </flight>
+</airlineCompanyDataProvider>

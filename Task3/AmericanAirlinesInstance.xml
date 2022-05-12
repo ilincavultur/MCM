@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <airlineCompanyDataProvider xmlns:xsi="http://www.w3.org/2001/XMLSchema" Name="American Airlines">
-
+    
     
     <flight>
         <depart>Washington</depart>
@@ -32,7 +32,7 @@
         </flightCatergory>
         <duration>P1DT2H</duration>
         <fare>
-     
+            
             <type>
                 <premiumEconomyFlexible>
                     <info>
@@ -53,7 +53,7 @@
         <totalTraveltime>P1DT2H</totalTraveltime>
     </flight>
     
-     <flight>
+    <flight>
         <depart>New York</depart>
         <to>Los Angeles</to>
         <flightCatergory>
@@ -83,8 +83,8 @@
         </flightCatergory>
         <duration>P1DT5H</duration>
         <fare>
-       		<status>Not available</status>
-           
+            <status>Not available</status>
+            
         </fare>
         <totalTraveltime>P1DT5H</totalTraveltime>
     </flight>
@@ -171,9 +171,9 @@
         <duration>P2DT7H</duration>
         <fare>
             <status>Not available</status>
-           
+            
         </fare>
         <totalTraveltime>P2DT7H</totalTraveltime>
     </flight>
     
- </airlineCompanyDataProvider>
+</airlineCompanyDataProvider>

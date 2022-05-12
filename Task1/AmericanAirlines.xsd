@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:group name="timeInfo">
-      <xs:sequence>
-          <xs:element name="travelInfo">
-              <xs:complexType>
-                  <xs:choice minOccurs="1" maxOccurs="2">
-                      <xs:element name="travelTime" type="xs:duration"/>
-                      <xs:element name="connectionTime" type="xs:duration"/>
-                  </xs:choice>
-              </xs:complexType>
-          </xs:element>
-      </xs:sequence>
+        <xs:sequence>
+            <xs:element name="travelInfo">
+                <xs:complexType>
+                    <xs:choice minOccurs="1" maxOccurs="2">
+                        <xs:element name="travelTime" type="xs:duration"/>
+                        <xs:element name="connectionTime" type="xs:duration"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
     </xs:group>
     <xs:group name="flightInfo">
         <xs:sequence>

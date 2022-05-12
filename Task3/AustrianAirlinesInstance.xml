@@ -41,8 +41,8 @@
                     <Carrier>Regional</Carrier>
                     <operatedBy>Austrian Airlines</operatedBy>
                     <timeSchedule>
-                    <TravelTime>P1Y1M3DT1H20M0S</TravelTime>
-                    
+                        <TravelTime>P1Y1M3DT1H20M0S</TravelTime>
+                        
                     </timeSchedule>
                 </flightDetails>
                 
@@ -72,7 +72,7 @@
         </flightType>
     </flight>
     
-     <flight>
+    <flight>
         <from>Vienna</from>
         <to>Paris</to>
         <duration>P1Y2M3DT1H20M0S</duration>
@@ -82,7 +82,7 @@
                     <info>
                         <price currency="Euro">180</price>
                         <numberOfRemainingSeats>120</numberOfRemainingSeats>
-                        <services>free return</services>
+                        <services>space for feet</services>
                     </info>
                 </businessFlex>
                 <economyBasic>
@@ -93,7 +93,7 @@
         <totalTraveltime>P1Y2M3DT1H20M0S</totalTraveltime>
         <flightType>
             <nonStop>
-	            <flightDetails flightNumber="AK205">
+                <flightDetails flightNumber="AK205">
                     <departure>
                         <departureAirport>
                             <departureAirportName>Vienna International Airport</departureAirportName>
@@ -114,7 +114,7 @@
                     <timeSchedule>
                         <TravelTime>P1Y2M3DT1H20M0S</TravelTime>
                     </timeSchedule>
-	            </flightDetails>
+                </flightDetails>
             </nonStop>
         </flightType>
     </flight>
@@ -160,7 +160,7 @@
                     <Carrier>Regional</Carrier>
                     <operatedBy>Austrian Airlines</operatedBy>
                     <timeSchedule>
-                      
+                        
                     </timeSchedule>
                 </flightDetails>
                 <flightDetails flightNumber="AR215">

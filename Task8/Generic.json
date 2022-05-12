@@ -1,0 +1,1467 @@
+{
+  "airlineCompanyDataProvider": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema",
+    "-Name": "",
+    "flight": [
+      {
+        "from": {
+          "country": "Romania",
+          "city": "Bucharest"
+        },
+        "to": {
+          "country": "Austria",
+          "city": "Vienna"
+        },
+        "duration": "P1Y1M3DT1H20M0S",
+        "fare": {
+          "ticketType": [
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "140"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "10",
+                        "numberLimit": "3"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "false"
+                    },
+                    "rebooking": "false",
+                    "refund": "false",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "200"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "30",
+                        "numberLimit": "3"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "true"
+                    },
+                    "rebooking": "true",
+                    "refund": "true",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "220"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "30",
+                        "numberLimit": "4"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "true"
+                    },
+                    "rebooking": "true",
+                    "refund": "true",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "300"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "30",
+                        "numberLimit": "3"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "false",
+                      "meal": "true"
+                    },
+                    "rebooking": "true",
+                    "refund": "true",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            }
+          ]
+        },
+        "totalTraveltime": "P1Y1M3DT1H20M0S",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "AU1S2",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "",
+                  "departureAirportName": "departureAirportName"
+                },
+                "departureTerminal": {
+                  "-self-closing": "true"
+                },
+                "departureGate": {
+                  "-self-closing": "true"
+                },
+                "departureDate": "2022-05-17",
+                "departureTime": "01:43:38.88",
+                "localDepartureTime": "01:43:38.88"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "arrivalAirportName"
+                },
+                "arrivalTerminal": {
+                  "-self-closing": "true"
+                },
+                "arrivalGate": {
+                  "-self-closing": "true"
+                },
+                "arrivalDate": "2022-05-17",
+                "arrivalTime": "18:16:01.74",
+                "localArrivalTime": "18:16:01.74"
+              },
+              "Airline": {
+                "carrier": "Regional",
+                "operatedBy": {
+                  "-self-closing": "true"
+                },
+                "AirCraft": {
+                  "flightNumber": "AU1S2"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": "Spain",
+          "city": "Madrid"
+        },
+        "to": {
+          "country": "Turkey",
+          "city": "Istanbul"
+        },
+        "duration": "P1Y1M3DT1H20M0S",
+        "fare": {
+          "ticketType": {
+            "economy": {
+              "availabilityStatus": "10",
+              "info": {
+                "price": {
+                  "-currency": "euro",
+                  "#text": "120"
+                },
+                "numberOfRemainingSeats": "10",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "10",
+                      "numberLimit": "2"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "false",
+                    "meal": "false"
+                  },
+                  "rebooking": "false",
+                  "refund": "false",
+                  "option": "no option"
+                }
+              },
+              "seatType": {
+                "economy": "10"
+              }
+            }
+          }
+        },
+        "totalTraveltime": "P1Y1M3DT1H20M0S",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "A8W9D",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "",
+                  "departureAirportName": "departureAirportName"
+                },
+                "departureTerminal": {
+                  "-self-closing": "true"
+                },
+                "departureGate": {
+                  "-self-closing": "true"
+                },
+                "departureDate": "2021-02-17",
+                "departureTime": "16:28:06.99",
+                "localDepartureTime": "16:28:06.99"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "arrivalAirportName"
+                },
+                "arrivalTerminal": {
+                  "-self-closing": "true"
+                },
+                "arrivalGate": {
+                  "-self-closing": "true"
+                },
+                "arrivalDate": "2021-02-22",
+                "arrivalTime": "22:51:15.83",
+                "localArrivalTime": "22:51:15.83"
+              },
+              "Airline": {
+                "carrier": "Regional",
+                "operatedBy": {
+                  "-self-closing": "true"
+                },
+                "AirCraft": {
+                  "flightNumber": "A8W9D"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": "Romania",
+          "city": "Bucharest"
+        },
+        "to": {
+          "country": "Spain",
+          "city": "Ibiza"
+        },
+        "duration": "P1Y1M3DT1H20M0S",
+        "fare": {
+          "ticketType": [
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "200"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "12",
+                        "numberLimit": "3"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "false"
+                    },
+                    "rebooking": "true",
+                    "refund": "0",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "120"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "30",
+                        "numberLimit": "2"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "false",
+                      "meal": "false"
+                    },
+                    "rebooking": "1",
+                    "refund": "1",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "120"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "30",
+                        "numberLimit": "4"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "false"
+                    },
+                    "rebooking": "false",
+                    "refund": "0",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "40"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "10",
+                        "numberLimit": "2"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "false",
+                      "meal": "true"
+                    },
+                    "rebooking": "false",
+                    "refund": "true",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            }
+          ]
+        },
+        "totalTraveltime": "P1Y1M3DT1H20M0S",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "I9Ol1",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "",
+                  "departureAirportName": "departureAirportName"
+                },
+                "departureTerminal": {
+                  "-self-closing": "true"
+                },
+                "departureGate": {
+                  "-self-closing": "true"
+                },
+                "departureDate": "2008-11-12",
+                "departureTime": "11:06:56.77",
+                "localDepartureTime": "11:06:56.77"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "arrivalAirportName"
+                },
+                "arrivalTerminal": {
+                  "-self-closing": "true"
+                },
+                "arrivalGate": {
+                  "-self-closing": "true"
+                },
+                "arrivalDate": "1976-12-10",
+                "arrivalTime": "14:18:25.97",
+                "localArrivalTime": "14:18:25.97"
+              },
+              "Airline": {
+                "carrier": "Regional",
+                "operatedBy": {
+                  "-self-closing": "true"
+                },
+                "AirCraft": {
+                  "flightNumber": "I9Ol1"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": "Germany",
+          "city": "Berlin"
+        },
+        "to": {
+          "country": "France",
+          "city": "Paris"
+        },
+        "duration": "P1Y1M3DT1H20M0S",
+        "fare": {
+          "ticketType": [
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "100"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "12",
+                        "numberLimit": "1"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "false",
+                      "meal": "false"
+                    },
+                    "rebooking": "false",
+                    "refund": "false",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "240"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "20",
+                        "numberLimit": "2"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "true"
+                    },
+                    "rebooking": "false",
+                    "refund": "true",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "150"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "20",
+                        "numberLimit": "3"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "true",
+                      "meal": "false"
+                    },
+                    "rebooking": "true",
+                    "refund": "false",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            },
+            {
+              "economy": {
+                "availabilityStatus": "10",
+                "info": {
+                  "price": {
+                    "-currency": "euro",
+                    "#text": "150"
+                  },
+                  "numberOfRemainingSeats": "10",
+                  "services": {
+                    "baggage": {
+                      "handLuggage": {
+                        "weightLimit": "25",
+                        "numberLimit": "2"
+                      },
+                      "checked": {
+                        "weightLimit": "0",
+                        "numberLimit": "0"
+                      }
+                    },
+                    "food": {
+                      "snackBeverages": "false",
+                      "meal": "false"
+                    },
+                    "rebooking": "true",
+                    "refund": "true",
+                    "option": "no option"
+                  }
+                },
+                "seatType": {
+                  "economy": "10"
+                }
+              }
+            }
+          ]
+        },
+        "totalTraveltime": "P1Y1M3DT1H20M0S",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "I2O1J",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "",
+                  "departureAirportName": "departureAirportName"
+                },
+                "departureTerminal": {
+                  "-self-closing": "true"
+                },
+                "departureGate": {
+                  "-self-closing": "true"
+                },
+                "departureDate": "1990-03-13",
+                "departureTime": "01:53:08.30",
+                "localDepartureTime": "01:53:08.30"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "arrivalAirportName"
+                },
+                "arrivalTerminal": {
+                  "-self-closing": "true"
+                },
+                "arrivalGate": {
+                  "-self-closing": "true"
+                },
+                "arrivalDate": "2000-06-10",
+                "arrivalTime": "12:05:41.81",
+                "localArrivalTime": "12:05:41.81"
+              },
+              "Airline": {
+                "carrier": "Regional",
+                "operatedBy": {
+                  "-self-closing": "true"
+                },
+                "AirCraft": {
+                  "flightNumber": "I2O1J"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Washington"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Los Angeles"
+        },
+        "duration": "P1DT2H",
+        "fare": {
+          "ticketType": {
+            "premiumEconomy": {
+              "availabilityStatus": "150",
+              "info": {
+                "price": {
+                  "-currency": "United States Dollar",
+                  "#text": "70"
+                },
+                "numberOfRemainingSeats": "150",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "Free WiFi"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            },
+            "premiumEconomyFlex": {
+              "availabilityStatus": "150",
+              "info": {
+                "price": {
+                  "-currency": "United States Dollar",
+                  "#text": "240"
+                },
+                "numberOfRemainingSeats": "150",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "Free choosing of seats"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            }
+          }
+        },
+        "totalTraveltime": "P1DT2H",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "AA11",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "ABC",
+                  "departureAirportName": "Washington International"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2020-05-17",
+                "departureTime": "23:13:37.78",
+                "localDepartureTime": "23:13:37.78"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Los Angeles International"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2020-05-18",
+                "arrivalTime": "03:48:13.62",
+                "localArrivalTime": "03:48:13.62"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "American Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": "Turbo Prop",
+                  "flightNumber": "AA11"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1DT2H"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "New York"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Los Angeles"
+        },
+        "duration": "P1DT5H",
+        "fare": {
+          "status": "Not available"
+        },
+        "totalTraveltime": "P1DT5H",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "AA222",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "ABC",
+                  "departureAirportName": "New York International"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2021-07-02",
+                "departureTime": "03:48:13.62",
+                "localDepartureTime": "03:48:13.62"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Los Angeles International"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2021-07-02",
+                "arrivalTime": "05:01:01.001",
+                "localArrivalTime": "05:01:01.001"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "American Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": "Turbo Prop",
+                  "flightNumber": "AA222"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1DT5H"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Boston"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Chicago"
+        },
+        "duration": "P0DT3H",
+        "fare": {
+          "ticketType": {
+            "premiumEconomy": {
+              "availabilityStatus": "150",
+              "info": {
+                "price": {
+                  "-currency": "United States Dollar",
+                  "#text": "70"
+                },
+                "numberOfRemainingSeats": "150",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "Free WiFi"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            },
+            "premiumEconomyFlex": {
+              "availabilityStatus": "150",
+              "info": {
+                "price": {
+                  "-currency": "United States Dollar",
+                  "#text": "240"
+                },
+                "numberOfRemainingSeats": "150",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "Free choosing of seats"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            }
+          }
+        },
+        "totalTraveltime": "P0DT3H",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "AA10",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "ABC",
+                  "departureAirportName": "Boston International"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2021-05-04",
+                "departureTime": "02:02:01.001",
+                "localDepartureTime": "02:02:01.001"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Chicago International"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2021-05-04",
+                "arrivalTime": "04:04:01.001",
+                "localArrivalTime": "04:04:01.001"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "American Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": "Turbo Prop",
+                  "flightNumber": "AA10"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P0DT3H"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Boston"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Chicago"
+        },
+        "duration": "P2DT7H",
+        "fare": {
+          "status": "Not available"
+        },
+        "totalTraveltime": "P2DT7H",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "AB11",
+              "departure": {
+                "departureAirport": {
+                  "-departureIATAairportCode": "ABC",
+                  "departureAirportName": "Boston International"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2019-07-04",
+                "departureTime": "23:13:37.78",
+                "localDepartureTime": "23:13:37.78"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Chicago International"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2019-07-05",
+                "arrivalTime": "04:04:01.001",
+                "localArrivalTime": "04:04:01.001"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "American Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": "Turbo Prop",
+                  "flightNumber": "AB11"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P2DT7H"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Bucharest"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Berlin"
+        },
+        "duration": "P1Y1M3DT1H20M0S",
+        "fare": {
+          "ticketType": {
+            "businessFlex": {
+              "availabilityStatus": {
+                "-self-closing": "true"
+              },
+              "info": {
+                "price": {
+                  "-currency": "Euro",
+                  "#text": "100"
+                },
+                "numberOfRemainingSeats": "100",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "space for feet"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            },
+            "economyBasic": {
+              "availabilityStatus": "0",
+              "info": {
+                "price": {
+                  "-currency": "",
+                  "#text": "0"
+                },
+                "numberOfRemainingSeats": "0",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "no option"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            }
+          }
+        },
+        "totalTraveltime": "P1Y1M3DT1H20M0S",
+        "flightType": {
+          "connecting": {
+            "numberOfStops": "1",
+            "flightDetails": {
+              "-flightNumber": "VA200",
+              "departure": {
+                "departureAirport": {
+                  "departureAirportName": "Bucharest International Airport"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2022-05-09",
+                "departureTime": "18:01:01.001",
+                "localDepartureTime": "18:01:01.001"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Vienna International Airport"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2022-05-09",
+                "arrivalTime": "20:01:01.001",
+                "localArrivalTime": "20:01:01.001"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "Austrian Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": {
+                    "-self-closing": "true"
+                  },
+                  "flightNumber": "VA200"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Vienna"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Paris"
+        },
+        "duration": "P1Y2M3DT1H20M0S",
+        "fare": {
+          "ticketType": {
+            "businessFlex": {
+              "availabilityStatus": {
+                "-self-closing": "true"
+              },
+              "info": {
+                "price": {
+                  "-currency": "Euro",
+                  "#text": "180"
+                },
+                "numberOfRemainingSeats": "120",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "space for feet"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            },
+            "economyBasic": {
+              "availabilityStatus": "0",
+              "info": {
+                "price": {
+                  "-currency": "",
+                  "#text": "0"
+                },
+                "numberOfRemainingSeats": "0",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "no option"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            }
+          }
+        },
+        "totalTraveltime": "P1Y2M3DT1H20M0S",
+        "flightType": {
+          "nonStop": {
+            "flightDetails": {
+              "-flightNumber": "AK205",
+              "departure": {
+                "departureAirport": {
+                  "departureAirportName": "Vienna International Airport"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2021-05-11",
+                "departureTime": "01:01:01.001",
+                "localDepartureTime": "01:01:01.001"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Paris International Airport"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2021-05-11",
+                "arrivalTime": "02:01:01.001",
+                "localArrivalTime": "02:01:01.001"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "Austrian Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": {
+                    "-self-closing": "true"
+                  },
+                  "flightNumber": "AK205"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      },
+      {
+        "from": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "Vienna"
+        },
+        "to": {
+          "country": {
+            "-self-closing": "true"
+          },
+          "city": "New York"
+        },
+        "duration": "P1Y2M3DT1H15M0S",
+        "fare": {
+          "ticketType": {
+            "businessFlex": {
+              "availabilityStatus": "0",
+              "info": {
+                "price": {
+                  "-currency": "",
+                  "#text": "0"
+                },
+                "numberOfRemainingSeats": "0",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "no option"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            },
+            "premiumEconomyFlex": {
+              "availabilityStatus": {
+                "-self-closing": "true"
+              },
+              "info": {
+                "price": {
+                  "-currency": "Euro",
+                  "#text": "160"
+                },
+                "numberOfRemainingSeats": "120",
+                "services": {
+                  "baggage": {
+                    "handLuggage": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    },
+                    "checked": {
+                      "weightLimit": "0",
+                      "numberLimit": "0"
+                    }
+                  },
+                  "food": {
+                    "snackBeverages": "0",
+                    "meal": "0"
+                  },
+                  "rebooking": "0",
+                  "refund": "0",
+                  "option": "free wifi"
+                }
+              },
+              "seatType": {
+                "-self-closing": "true"
+              }
+            }
+          }
+        },
+        "totalTraveltime": "P1Y2M3DT1H15M0S",
+        "flightType": {
+          "connecting": {
+            "numberOfStops": "1",
+            "flightDetails": {
+              "-flightNumber": "AS210",
+              "departure": {
+                "departureAirport": {
+                  "departureAirportName": "Vienna International Airport"
+                },
+                "departureTerminal": "departureTerminal",
+                "departureGate": "departureGate",
+                "departureDate": "2021-05-11",
+                "departureTime": "01:01:01.001",
+                "localDepartureTime": "01:01:01.001"
+              },
+              "arrival": {
+                "arrivalAirport": {
+                  "arrivalAirportName": "Amsterdam International Airport"
+                },
+                "arrivalTerminal": "arrivalTerminal",
+                "arrivalGate": "arrivalGate",
+                "arrivalDate": "2021-05-11",
+                "arrivalTime": "02:01:01.001",
+                "localArrivalTime": "02:01:01.001"
+              },
+              "Airline": {
+                "carrier": "carrier",
+                "operatedBy": "Austrian Airlines",
+                "AirCraft": {
+                  "brand": {
+                    "-self-closing": "true"
+                  },
+                  "model": {
+                    "-self-closing": "true"
+                  },
+                  "flightNumber": "AS210"
+                }
+              },
+              "timeSchedule": {
+                "TravelTime": "P1Y2M3DT1H15M0S"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

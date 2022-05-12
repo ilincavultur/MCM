@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<availableFlights xmlns="http://www.example.org/Lufthansa_XML_Schema">
+<availableFlights xmlns:xsi="http://www.w3.org/2001/XMLSchema">
   <flight>
     
     <tripInfo>
@@ -11,17 +11,25 @@
       <arrivalPort>
         <portCode>ask</portCode>
       </arrivalPort>
-      <destination />
-      <departureLocation />
+      <destination city="Vienna" country="Austria"/>
+      <departureLocation city="Bucharest" country="Romania"/>
       <airline>
         <carrier>Regional</carrier>
       </airline>
-      <availableTickets />
+      <availableTickets>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </availableTickets>
     </tripInfo>
     
     <aircraft>
       <flightNumber>AU1S2</flightNumber>
-      <numberOfSeats />
+      <numberOfSeats>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </numberOfSeats>
     </aircraft>
     
     <ticket>
@@ -115,16 +123,24 @@
       <arrivalPort>
         <portCode>adg</portCode>
       </arrivalPort>
-      <destination />
-      <departureLocation />
+      <destination city="Istanbul" country="Turkey"/>
+      <departureLocation city="Madrid" country="Spain"/>
       <airline>
         <carrier>Regional</carrier>
       </airline>
-      <availableTickets />
+      <availableTickets>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </availableTickets>
     </tripInfo>
     <aircraft>
       <flightNumber>A8W9D</flightNumber>
-      <numberOfSeats />
+      <numberOfSeats>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </numberOfSeats>
     </aircraft>
     
     <ticket>
@@ -158,17 +174,25 @@
       <arrivalPort>
         <portCode>dfe</portCode>
       </arrivalPort>
-      <destination />
-      <departureLocation />
+      <destination city="Ibiza" country="Spain"/>
+      <departureLocation city="Bucharest" country="Romania"/>
       <airline>
         <carrier>Regional</carrier>
       </airline>
-      <availableTickets />
+      <availableTickets>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </availableTickets>
     </tripInfo>
     
     <aircraft>
       <flightNumber>I9Ol1</flightNumber>
-      <numberOfSeats />
+      <numberOfSeats>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </numberOfSeats>
     </aircraft>
     
     <ticket>
@@ -262,17 +286,25 @@
       <arrivalPort>
         <portCode>dfj</portCode>
       </arrivalPort>
-      <destination />
-      <departureLocation />
+      <destination city="Paris" country="France"/>
+      <departureLocation city="Berlin" country="Germany"/>
       <airline>
         <carrier>Regional</carrier>
       </airline>
-      <availableTickets />
+      <availableTickets>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </availableTickets>
     </tripInfo>
     
     <aircraft>
       <flightNumber>I2O1J</flightNumber>
-      <numberOfSeats />
+      <numberOfSeats>
+      	<economy>10</economy>
+      	<business>12</business>
+      	<first>0</first>
+      </numberOfSeats>
     </aircraft>
     
     <ticket>

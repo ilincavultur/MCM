@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ul>
+    <li>
+        <totalTraveltime xmlns:xsi="http://www.w3.org/2001/XMLSchema">P0DT3H</totalTraveltime>
+    </li>
+    <li>
+        <totalTraveltime xmlns:xsi="http://www.w3.org/2001/XMLSchema">P2DT7H</totalTraveltime>
+    </li>
+</ul>

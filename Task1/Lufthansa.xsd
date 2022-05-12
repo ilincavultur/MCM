@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Lufthansa_XML_Schema" xmlns:lh="http://www.example.org/Lufthansa_XML_Schema" elementFormDefault="qualified">
+    
+    <element name="availableFlights" type="lh:availableFlightsType"></element>
+    
+    <complexType name="flightType">
+        <sequence>
+            <element name="tripInfo" type="lh:tripInfoType" maxOccurs="1" minOccurs="1"></element>
+            <element name="aircraft" type="lh:aircraftType" maxOccurs="1" minOccurs="1"></element>
+            <element name="ticket" type="lh:ticketType" maxOccurs="unbounded" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+    
+    
+    <complexType name="tripInfoType">
+        <sequence>
+            <element name="departureDateTime" type="dateTime"
+                maxOccurs="1" minOccurs="1">
+            </element>
+            <element name="arrivalDateTime" type="dateTime"
+                maxOccurs="1" minOccurs="1">
+            </element>
+            <element name="duration" type="string" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="departurePort" type="lh:portType"
+                maxOccurs="1" minOccurs="1">
+            </element>
+            <element name="arrivalPort" type="lh:portType" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="destination" type="lh:location" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="departureLocation" type="lh:location"
+                maxOccurs="1" minOccurs="1">
+            </element>
+            <element name="arrivalTerminal" type="string" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="departureTerminal" type="string" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="arrivalGate" type="int" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="departureGate" type="int" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="airline" type="lh:airlineType" maxOccurs="1" minOccurs="1">
+            </element>
+            <element name="availableTickets" type="lh:availableTicketsType" maxOccurs="1"
+                minOccurs="1" >
+            </element>
+        </sequence>
+    </complexType>
+    
+    
+    <complexType name="portType">
+        <sequence>
+            <element name="portCode" maxOccurs="1" minOccurs="1">
+                <simpleType>
+                    <restriction base="string">
+                        <length value="3"></length>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    
+    
+    <complexType name="destinationType"></complexType>
+    
+    <complexType name="location">
+        <attribute name="country">
+            <simpleType>
+                <restriction base="string">
+                    <minLength value="1"></minLength>
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="city">
+            <simpleType>
+                <restriction base="string">
+                    <minLength value="1"></minLength>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+    
+    
+    
+    <complexType name="aircraftType">
+        <sequence>
+            <element name="brand" type="string" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="model" type="string" maxOccurs="1"
+                minOccurs="0">
+            </element>
+            <element name="flightNumber" type="string" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="numberOfSeats" type="lh:seatsType" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="ticketType">
+        <sequence>
+            <element name="name" type="lh:nameType" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="euroPrice" type="double" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="class" maxOccurs="1" minOccurs="1">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="economy"></enumeration>
+                        <enumeration value="premium economy"></enumeration>
+                        <enumeration value="business"></enumeration>
+                        <enumeration value="first"></enumeration>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="baggage" type="lh:baggageType" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="services" type="lh:serviceType" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="food" type="lh:foodType" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="baggageType">
+        <sequence>
+            <element name="handLuggage" type="lh:bagType" maxOccurs="1" minOccurs="1"></element>
+            <element name="checked" type="lh:bagType" maxOccurs="1" minOccurs="0"></element>
+        </sequence>
+    </complexType>
+    
+    
+    
+    <complexType name="bagType">
+        <sequence>
+            <element name="weightLimit" type="int" maxOccurs="1" minOccurs="1"></element>
+            <element name="numberLimit" type="int" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="serviceType">
+        <sequence>
+            <element name="rebooking" type="boolean" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="refund" type="boolean" maxOccurs="1"
+                minOccurs="1">
+            </element>
+            <element name="option" maxOccurs="7"
+                minOccurs="0">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="seat reservation"></enumeration>
+                        <enumeration value="earlier flight"></enumeration>
+                        <enumeration value="priority lane"></enumeration>
+                        <enumeration value="priority boarding"></enumeration>
+                        <enumeration value="lounge"></enumeration>
+                        <enumeration value="eJournals"></enumeration>
+                        <enumeration value="empty middle seat"></enumeration>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="foodType">
+        <sequence>
+            <element name="snackBeverages" type="boolean" maxOccurs="1" minOccurs="1"></element>
+            <element name="meal" type="boolean" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="availableFlightsType">
+        <sequence>
+            <element name="flight" type="lh:flightType" maxOccurs="unbounded" minOccurs="0"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="nameType">
+        <simpleContent>
+            <extension base="string">
+                <attribute name="seatsAvailable" type="int">
+                </attribute>
+            </extension>
+        </simpleContent>
+    </complexType>
+    
+    <complexType name="seatsType">
+        <sequence>
+            <element name="economy" type="int" maxOccurs="1" minOccurs="0"></element>
+            <element name="business" type="int" maxOccurs="1" minOccurs="0"></element>
+            <element name="first" type="int" maxOccurs="1" minOccurs="0"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="airlineType">
+        <sequence>
+            <element name="operatedBy" type="string" maxOccurs="1" minOccurs="0"></element>
+            <element name="carrier" type="string" maxOccurs="1" minOccurs="1"></element>
+        </sequence>
+    </complexType>
+    
+    <complexType name="availableTicketsType">
+        <sequence>
+            <element name="economy" type="int" maxOccurs="1" minOccurs="0"></element>
+            <element name="business" type="int" maxOccurs="1" minOccurs="0"></element>
+            <element name="first" type="int" maxOccurs="1" minOccurs="0"></element>
+        </sequence>
+    </complexType>
+</schema>
