@@ -51,7 +51,7 @@ java XSDValidator.java Task4.xsd newLufthansa.xml
 Task6
 As stated in Task5, I saved all output files as: newAmerican.xml, newAustrian.xml, newLufthansa.xml
 
-For task 6 I had to create a new separate project called Task6Merge.xpr which only contains merge.xsl + new scenario called merge + the transformed files from task5 newAmerican.xml, newAustrian.xml, newLufthansa.xml
+For task 6 I had to create a new separate project called Task6Merge.xpr which only contains merge.xsl + new scenario called merge + the transformed files from task5 newAmerican.xml, newAustrian.xml, newLufthansa.xml. This new project can be found in folder Task6
 
 This is due to the fact that otherwise the scenario merge merges all xml files found in the project and this produces an error and is also not correct as I only want to merge the 3 instances.
 
