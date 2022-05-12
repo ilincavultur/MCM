@@ -26,12 +26,7 @@ For the Lufthansa XML:
 java XSDValidator.java Lufthansa.xsd LufthansaInstance.xml 
 
 Task4
-Again, to validate each XML instance against the generic Task4.xsd schema, please open a terminal in the project:
-
-Type:
-java XSDValidator.java Task4.xsd AmericanAirlinesInstance.xml 
-java XSDValidator.java Task4.xsd AustrianAirlinesInstance.xml 
-java XSDValidator.java Task4.xsd LufthansaInstance.xml 
+No Comment
 
 Task5
 For the American Airlines XML: 
@@ -45,6 +40,13 @@ I saved the output in newAustrian.xml file
 For the Lufthansa XML: 
 To apply the Lufthansa.xsl transform on the LufthansaInstance.xml please right click on LufthansaInstance.xml -> Transform -> Transform with -> Lufthansa (scenario)
 I saved the output in newLufthansa.xml file
+
+Again, to validate each XML instance against the generic Task4.xsd schema, please open a terminal in the project:
+
+Type:
+java XSDValidator.java Task4.xsd newAmerican.xml 
+java XSDValidator.java Task4.xsd newAustrian.xml 
+java XSDValidator.java Task4.xsd newLufthansa.xml 
 
 Task6
 As stated in Task5, I saved all output files as: newAmerican.xml, newAustrian.xml, newLufthansa.xml
