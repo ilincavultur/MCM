@@ -964,7 +964,6 @@
                 <file name="XSDValidator.java"/>
             </folder>
             <folder name="Task4">
-                <file name="generic.xml"/>
                 <file name="Task4.xsd"/>
             </folder>
             <folder name="Task5">

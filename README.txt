@@ -1,5 +1,6 @@
 SOURCES I used:
-
+XSDValidator: https://www.tutorialspoint.com/xsd/xsd_validation.html
+merge.xsl: https://www.oxygenxml.com/forum/topic11375.html#:~:text=To%20use%20this%2C%20create%20a,type%20for%20one%20XML%20file
 
 Comments for checking my assignment:
 
