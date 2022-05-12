@@ -11,7 +11,7 @@ Task1
 No comments
 
 Task2
-No comments
+Validate with right click -> Validate
 
 Task3
 To validate the XML instances against the corresponding XSDs, please open a terminal in the project:
