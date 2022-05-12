@@ -38,7 +38,7 @@ To apply the Austrian.xsl transform on the AustrianAirlinesInstance.xml please r
 I saved the output in newAustrian.xml file
 
 For the Lufthansa XML: 
-To apply the Lufthansa.xsl transform on the LufthansaInstance.xml please right click on LufthansaInstance.xml -> Transform -> Transform with -> Lufthansa (scenario)
+To apply the Lufthansa.xsl transform on the LufthansaInstanceTask6.xml please right click on LufthansaInstanceTask6.xml -> Transform -> Transform with -> Lufthansa (scenario)
 I saved the output in newLufthansa.xml file
 
 Again, to validate each XML instance against the generic Task4.xsd schema, please open a terminal in the project:

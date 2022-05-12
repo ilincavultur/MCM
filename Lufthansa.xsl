@@ -49,17 +49,21 @@
                         
                         <xsl:for-each select="./ticket">           
                             <ticketType>         
+                                
                                 <economy>
+                                    
                                     <availabilityStatus>
                                         
-                                        <xsl:value-of select="/availableFlights/flight/aircraft/numberOfSeats/economy"/>
+                                        <xsl:value-of select="./aircraft/numberOfSeats/economy"/>
                                         
                                     </availabilityStatus>
                                     <info>
                                         <price>
                                             <xsl:attribute name="currency" select="'euro'"></xsl:attribute>
-                                            <xsl:variable name="price" select="./euroPrice"/>   
-                                            <xsl:value-of select="floor($price)"/>
+                                            
+                                            <xsl:value-of select="substring-before(./euroPrice, '.')"/>  
+                                            
+                                            
                                         </price> 
                                         <numberOfRemainingSeats>
                                             <xsl:value-of select="/availableFlights/flight/aircraft/numberOfSeats/economy"/>
@@ -93,15 +97,20 @@
                                                     </xsl:when>
                                                     <xsl:otherwise>no option</xsl:otherwise>
                                                 </xsl:choose>
+                                                
+                                                
+                                                
                                             </option>
                                             
                                         </services>   
                                     </info>
-                                    <seatType>
-                                        <economy><xsl:value-of select="/availableFlights/flight/aircraft/numberOfSeats/economy"/></economy>
-                                    </seatType>
+                                    <seatType></seatType>
+                                    
                                 </economy>
-            
+                                
+                                
+                                
+                                
                             </ticketType>                    
                         </xsl:for-each>
                         
