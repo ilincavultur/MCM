@@ -15,7 +15,7 @@ public class Main {
 		
 		System.out.println("Path to folder provided is: " + path);
 		
-		reader.setPath(path);
+		
 		
 		reader.readFolder(path);
 	}
