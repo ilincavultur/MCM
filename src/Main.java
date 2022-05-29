@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
 
 	static FilesReader reader = new FilesReader();
+	static MetadataReader metadataReader = new MetadataReader();
 	
 	public static void main(String[] args) {
 		// Task 1
@@ -18,6 +19,12 @@ public class Main {
 		
 		
 		reader.readFolder(path);
+		
+		//metadataReader.setJpegFiles(reader.getJpegFiles());
+		//metadataReader.setPdfFiles(reader.getPdfFiles());
+		
+		metadataReader.readJpegMetadata(reader.getJpegFiles());
+		metadataReader.printJpegMetadata();
 	}
 
 }
