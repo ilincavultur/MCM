@@ -20,11 +20,14 @@ public class Main {
 		
 		reader.readFolder(path);
 		
-		//metadataReader.setJpegFiles(reader.getJpegFiles());
-		//metadataReader.setPdfFiles(reader.getPdfFiles());
-		
 		metadataReader.readJpegMetadata(reader.getJpegFiles());
-		metadataReader.printJpegMetadata();
+		//metadataReader.printJpegExifMetadata();
+		
+		//metadataReader.printJpegIptcMetadata();
+		
+		metadataReader.readPDFMetadata(reader.getPdfFiles());
+		metadataReader.printPdfXmpMetadata();
+		//metadataReader.printPdfDcMetadata();
 	}
 
 }
