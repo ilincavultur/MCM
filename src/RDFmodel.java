@@ -79,6 +79,11 @@ public class RDFmodel {
 		
 		Model rdfModel = ModelFactory.createDefaultModel();
 		
+		rdfModel.setNsPrefix("ex", exifURI);
+		rdfModel.setNsPrefix("ip", iptcURI);
+		rdfModel.setNsPrefix("xmp", xmpURI);
+		rdfModel.setNsPrefix("dc", dcURI);
+		
 		//Property analyzedBy = rdfModel.createProperty(URI + "analyzedBy: 11925311");
 		
 		//Property analyzedBy = rdfModel.createProperty(URI)
@@ -112,8 +117,8 @@ public class RDFmodel {
 			//Resource exifRes = rdfModel.createResource(exifURI + entry.getKey());
 			
 			for (Map.Entry<String, String> iptcEntry : entry.getValue().entrySet()) {
-				Property exifProperty = rdfModel.createProperty(iptcURI + iptcEntry.getKey());
-				rdfModel.add(img, exifProperty, iptcEntry.getValue());
+				Property iptcProperty = rdfModel.createProperty(iptcURI + iptcEntry.getKey().toString().replaceAll("\\s+",""));
+				rdfModel.add(img, iptcProperty, iptcEntry.getValue());
 				//Property exifProperty = rdfModel.createProperty(exifURI);
 				
 				
@@ -134,8 +139,8 @@ public class RDFmodel {
 			//Resource exifRes = rdfModel.createResource(exifURI + entry.getKey());
 			
 			for (Map.Entry<String, String> xmpEntry : entry.getValue().entrySet()) {
-				Property exifProperty = rdfModel.createProperty(xmpURI + xmpEntry.getKey());
-				rdfModel.add(pdf, exifProperty, xmpEntry.getValue());
+				Property xmpProperty = rdfModel.createProperty(xmpURI + xmpEntry.getKey().toString().replaceAll("\\s+",""));
+				rdfModel.add(pdf, xmpProperty, xmpEntry.getValue());
 				//Property exifProperty = rdfModel.createProperty(exifURI);
 				
 				
@@ -157,8 +162,8 @@ public class RDFmodel {
 			//Resource exifRes = rdfModel.createResource(exifURI + entry.getKey());
 			
 			for (Map.Entry<String, String> dcEntry : entry.getValue().entrySet()) {
-				Property exifProperty = rdfModel.createProperty(dcURI + dcEntry.getKey());
-				rdfModel.add(pdf, exifProperty, dcEntry.getValue());
+				Property dcProperty = rdfModel.createProperty(dcURI + dcEntry.getKey().toString().replaceAll("\\s+",""));
+				rdfModel.add(pdf, dcProperty, dcEntry.getValue());
 				//Property exifProperty = rdfModel.createProperty(exifURI);
 				
 				
