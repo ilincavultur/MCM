@@ -80,9 +80,16 @@ public class RDFmodel {
 		Model rdfModel = ModelFactory.createDefaultModel();
 		
 		rdfModel.setNsPrefix("ex", exifURI);
+		//rdfModel.setNsPrefix("ex", "http://www.w3.org/2003/12/exif/ns/Date/");
+		//rdfModel.setNsPrefix("ex", "http://www.w3.org/2003/12/exif/ns/ReferenceBlack/");
 		rdfModel.setNsPrefix("ip", iptcURI);
+		//rdfModel.setNsPrefix("ip", "http://cv.iptc.org/newscodes/subjectcode/Caption/");
 		rdfModel.setNsPrefix("xmp", xmpURI);
 		rdfModel.setNsPrefix("dc", dcURI);
+		
+		//http://cv.iptc.org/newscodes/subjectcode/Caption/
+		//"http://RDFmodel/example/
+	
 		
 		//Property analyzedBy = rdfModel.createProperty(URI + "analyzedBy: 11925311");
 		
@@ -92,8 +99,11 @@ public class RDFmodel {
 			
 			
 			Resource img = rdfModel.createResource(URI + entry.getKey());
+			
+			Property analyzedBy = rdfModel.createProperty(URI + "AnalyzedBy");
+			rdfModel.add(img, analyzedBy, "11925311");
 		
-			img.addProperty(RDF.type, "analyzedBy: 11925311");
+			//img.addProperty(RDF.type, "analyzedBy: 11925311");
 		
 			for (Map.Entry<String, String> exifEntry : entry.getValue().entrySet()) {
 				if (!exifEntry.getKey().toString().replaceAll("\\s+","").contains("Unknowntag")) {
@@ -112,9 +122,12 @@ public class RDFmodel {
 			
 			Resource img = rdfModel.createResource(URI + entry.getKey());
 		
-			img.addProperty(RDF.type, "analyzedBy: 11925311");
+			//img.addProperty(RDF.type, "analyzedBy: 11925311");
 			
 			//Resource exifRes = rdfModel.createResource(exifURI + entry.getKey());
+			
+			Property analyzedBy = rdfModel.createProperty(URI + "AnalyzedBy");
+			rdfModel.add(img, analyzedBy, "11925311");
 			
 			for (Map.Entry<String, String> iptcEntry : entry.getValue().entrySet()) {
 				Property iptcProperty = rdfModel.createProperty(iptcURI + iptcEntry.getKey().toString().replaceAll("\\s+",""));
@@ -134,8 +147,9 @@ public class RDFmodel {
 			
 			Resource pdf = rdfModel.createResource(URI + entry.getKey());
 		
-			pdf.addProperty(RDF.type, "analyzedBy: 11925311");
-			
+			//pdf.addProperty(RDF.type, "analyzedBy: 11925311");
+			Property analyzedBy = rdfModel.createProperty(URI + "AnalyzedBy");
+			rdfModel.add(pdf, analyzedBy, "11925311");
 			//Resource exifRes = rdfModel.createResource(exifURI + entry.getKey());
 			
 			for (Map.Entry<String, String> xmpEntry : entry.getValue().entrySet()) {
@@ -157,8 +171,9 @@ public class RDFmodel {
 			Resource pdf = rdfModel.createResource(URI + entry.getKey());
 			
 		
-			pdf.addProperty(RDF.type, "analyzedBy: 11925311");
-			
+			//pdf.addProperty(RDF.type, "analyzedBy: 11925311");
+			Property analyzedBy = rdfModel.createProperty(URI + "AnalyzedBy");
+			rdfModel.add(pdf, analyzedBy, "11925311");
 			//Resource exifRes = rdfModel.createResource(exifURI + entry.getKey());
 			
 			for (Map.Entry<String, String> dcEntry : entry.getValue().entrySet()) {
