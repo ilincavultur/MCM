@@ -1,5 +1,7 @@
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -189,9 +191,19 @@ public class RDFmodel {
 			
 		}
 		System.out.println("RDF");
+		PrintStream fileStream;
+		try {
+			fileStream = new PrintStream("src/result.rdf");
+			System.setOut(fileStream);
+			RDFDataMgr.write(System.out, rdfModel, Lang.RDFXML);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 		//rdfModel.write(System.out);
-		RDFDataMgr.write(System.out, rdfModel, Lang.RDFXML);
+		
 		
 	}
 

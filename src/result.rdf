@@ -1,0 +1,395 @@
+<rdf:RDF
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2003/12/exif/ns/ReferenceBlack/"
+    xmlns:j.1="http://www.w3.org/2003/12/exif/ns/Date/"
+    xmlns:j.2="http://RDFmodel/example/"
+    xmlns:ex="http://www.w3.org/2003/12/exif/ns/"
+    xmlns:ip="http://cv.iptc.org/newscodes/subjectcode/"
+    xmlns:xmp="http://ns.adobe.com/xap/"
+    xmlns:j.3="http://cv.iptc.org/newscodes/subjectcode/Caption/">
+  <rdf:Description rdf:about="http://RDFmodel/example/jawa-4.jpg">
+    <ex:DigitalZoomRatio>1</ex:DigitalZoomRatio>
+    <ex:FocalLength35>34 mm</ex:FocalLength35>
+    <ex:ShutterSpeedValue>1/79 sec</ex:ShutterSpeedValue>
+    <ex:SceneType>Directly photographed image</ex:SceneType>
+    <ex:SceneCaptureType>Standard</ex:SceneCaptureType>
+    <ex:Sub-SecTimeDigitized>00</ex:Sub-SecTimeDigitized>
+    <ex:Flash>Flash did not fire</ex:Flash>
+    <ex:ISOSpeedRatings>200</ex:ISOSpeedRatings>
+    <ex:SensingMethod>One-chip color area sensor</ex:SensingMethod>
+    <ex:GainControl>None</ex:GainControl>
+    <ex:Contrast>None</ex:Contrast>
+    <ex:ApertureValue>f/8.0</ex:ApertureValue>
+    <ex:WhiteBalance>Unknown</ex:WhiteBalance>
+    <ex:Sharpness>None</ex:Sharpness>
+    <ip:Headline>Indonesia travel landscape photography, Sunrise at Borobudur Temple, Yogyakarta, Java, Indonesia, travel landscape photography by travel and landscape photographer Matthew Williams-Ellis</ip:Headline>
+    <ex:ExposureBiasValue>0 EV</ex:ExposureBiasValue>
+    <ex:MeteringMode>Multi-segment</ex:MeteringMode>
+    <ex:ExifVersion>2.30</ex:ExifVersion>
+    <ex:SubjectDistance>2.82 metres</ex:SubjectDistance>
+    <ex:ImageDescription>Indonesia travel landscape photography, Sunrise at Borobudur Temple, Yogyakarta, Java, Indonesia, travel landscape photography by travel and landscape photographer Matthew Williams-Ellis</ex:ImageDescription>
+    <ip:ApplicationRecordVersion>4</ip:ApplicationRecordVersion>
+    <ex:WhiteBalanceMode>Auto white balance</ex:WhiteBalanceMode>
+    <ex:ExposureProgram>Aperture priority</ex:ExposureProgram>
+    <ex:XResolution>72 dots per inch</ex:XResolution>
+    <ex:ThumbnailLength>16786 bytes</ex:ThumbnailLength>
+    <ex:SubjectDistanceRange>Unknown</ex:SubjectDistanceRange>
+    <j.1:Time>2014:01:04 14:35:03</j.1:Time>
+    <ex:ExposureTime>1/80 sec</ex:ExposureTime>
+    <ip:DigitalDateCreated>2011:05:07</ip:DigitalDateCreated>
+    <ex:ExposureMode>Auto exposure</ex:ExposureMode>
+    <ex:FocalLength>34 mm</ex:FocalLength>
+    <ip:Keywords>above;ancient;architecture;Asia;Borobudur;Borobudur Temple;buddhist;building;dawn;dramatic;early;famous;forest;green;HDR;high dynamic range;hills;hilly;historic;horizontal;iconic;image;Indonesia;Java;jungle;landmark;landscape;landscape photography;mist;misty;morning;nobody;palm tree;photo;photography;rights managed;rm;silhouette;silhouetted;sky;south east asia;Southeast Asia;stock photo travel;stupas;temple;travel photography;trees;UNESCO;Unesco world heritage site;wellistravelphotography;world heritage site;Yogyakarta;Holiday;Landscape;Tourism;Island</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+    <ex:Software>Adobe Photoshop Camera Raw 8.1 (Macintosh)</ex:Software>
+    <ex:Model>NIKON D700</ex:Model>
+    <ex:CFAPattern>[Red,Green][Green,Blue]</ex:CFAPattern>
+    <ex:Compression>JPEG (old-style)</ex:Compression>
+    <ex:F-Number>f/8.0</ex:F-Number>
+    <ex:ThumbnailOffset>962 bytes</ex:ThumbnailOffset>
+    <ex:Saturation>None</ex:Saturation>
+    <ip:ObjectName>Indonesia travel landscape photography, Sunrise at Borobudur Tem</ip:ObjectName>
+    <ex:ResolutionUnit>Inch</ex:ResolutionUnit>
+    <ip:DigitalTimeCreated>06:21:44+0000</ip:DigitalTimeCreated>
+    <ip:DateCreated>2011:05:07</ip:DateCreated>
+    <j.1:TimeDigitized>2011:05:07 06:21:44</j.1:TimeDigitized>
+    <ex:FileSource>Digital Still Camera (DSC)</ex:FileSource>
+    <ex:CustomRendered>Normal process</ex:CustomRendered>
+    <ex:YResolution>72 dots per inch</ex:YResolution>
+    <ex:MaxApertureValue>f/2.8</ex:MaxApertureValue>
+    <j.3:Abstract>Indonesia travel landscape photography, Sunrise at Borobudur Temple, Yogyakarta, Java, Indonesia, travel landscape photography by travel and landscape photographer Matthew Williams-Ellis</j.3:Abstract>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/vie-2.jpg">
+    <ip:Keywords>Holiday;Landscape;City;Tourism;Capital</ip:Keywords>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/jawa-1.jpg">
+    <ip:Keywords>Holiday;Landscape;Tourism;Island</ip:Keywords>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/The University Library of the University of Vienna.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>349689</xmp:Content-Length>
+    <xmp:resourceName>The University Library of the University of Vienna.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Humans.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>146913</xmp:Content-Length>
+    <xmp:resourceName>Humans.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Paris.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>87701</xmp:Content-Length>
+    <xmp:resourceName>Paris.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/par-1.jpg">
+    <ip:Keywords>Holiday;Landscape;City;Tourism;Capital</ip:Keywords>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/The Austrian National Library.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>330917</xmp:Content-Length>
+    <xmp:resourceName>The Austrian National Library.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/m-4.jpg">
+    <ip:Keywords>Animals;Mammals;Species</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/ml-3.jpg">
+    <ip:Keywords>Species;Marine Life</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Marine life.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>136348</xmp:Content-Length>
+    <xmp:resourceName>Marine life.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/vie-3.jpg">
+    <ip:Keywords>Holiday;Landscape;City;Tourism;Capital</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/onb-3.jpg">
+    <ip:SpecialInstructions>FBMD2300098703000011150000ae2000003c29000079730000a48a000039ab00006bc2000055d9000092030100</ip:SpecialInstructions>
+    <ip:Keywords>Library;Tourism;Education</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/m-1.jpg">
+    <ip:Keywords>Animals;Mammals;Species</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Jawa.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>105427</xmp:Content-Length>
+    <xmp:resourceName>Jawa.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/lib-1.jpg">
+    <ip:Keywords>Library;Education;University</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/jawa-3.jpg">
+    <ip:Keywords>Holiday;Landscape;Tourism;Island</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Java.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>76082</xmp:Content-Length>
+    <xmp:resourceName>Java.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/ml_2.jpg">
+    <ip:Keywords>Species;Marine Life</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/onb-2.jpg">
+    <ip:Keywords>City;Library;Tourism;Education</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/lib1-xMedUni_Wien_Josephinum_Bibliothek-meduni_wien.jpg">
+    <ip:Keywords>Library;Education;University</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Vienna.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>390175</xmp:Content-Length>
+    <xmp:resourceName>Vienna.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/jawa-2.jpg">
+    <ip:Keywords>Holiday;Landscape;Tourism;Island</ip:Keywords>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/ml-5.jpg">
+    <ex:ImageDescription>DCIM\100GOPRO\GOPR1293.</ex:ImageDescription>
+    <ex:WhiteBalance>Unknown</ex:WhiteBalance>
+    <ex:F-Number>f/2.8</ex:F-Number>
+    <ex:DeviceSettingDescription>0 0 0 0</ex:DeviceSettingDescription>
+    <ex:ExposureMode>Auto exposure</ex:ExposureMode>
+    <ex:CustomRendered>Normal process</ex:CustomRendered>
+    <ex:XResolution>96 dots per inch</ex:XResolution>
+    <ex:Model>HERO4 Silver</ex:Model>
+    <j.1:Time>2018:10:26 01:12:44</j.1:Time>
+    <ex:Software>Windows Photo Editor 10.0.10011.16384</ex:Software>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <ex:Sharpness>Hard</ex:Sharpness>
+    <ex:Flash>Flash did not fire</ex:Flash>
+    <ex:ExifImageHeight>3000 pixels</ex:ExifImageHeight>
+    <j.1:TimeDigitized>2015:01:02 03:40:41</j.1:TimeDigitized>
+    <ex:WhiteBalanceMode>Auto white balance</ex:WhiteBalanceMode>
+    <ex:ExifImageWidth>4000 pixels</ex:ExifImageWidth>
+    <ex:ExposureIndex>0</ex:ExposureIndex>
+    <ex:FileSource>Digital Still Camera (DSC)</ex:FileSource>
+    <ex:ComponentsConfiguration>YCbCr</ex:ComponentsConfiguration>
+    <ex:ExposureProgram>Program normal</ex:ExposureProgram>
+    <ex:Make>GoPro</ex:Make>
+    <ex:SceneType>Directly photographed image</ex:SceneType>
+    <ex:MaxApertureValue>f/2.8</ex:MaxApertureValue>
+    <ex:ApertureValue>f/2.8</ex:ApertureValue>
+    <ex:ExposureTime>8333/500000 sec</ex:ExposureTime>
+    <ex:FlashPixVersion>1.00</ex:FlashPixVersion>
+    <ex:Saturation>None</ex:Saturation>
+    <ex:DigitalZoomRatio>1</ex:DigitalZoomRatio>
+    <ex:FocalLength>3 mm</ex:FocalLength>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+    <ex:Contrast>None</ex:Contrast>
+    <ex:SceneCaptureType>Standard</ex:SceneCaptureType>
+    <ex:ThumbnailOffset>15716 bytes</ex:ThumbnailOffset>
+    <ex:ExifVersion>2.21</ex:ExifVersion>
+    <ex:ThumbnailLength>7444 bytes</ex:ThumbnailLength>
+    <ex:FocalLength35>15 mm</ex:FocalLength35>
+    <ex:SubjectDistance>Unknown</ex:SubjectDistance>
+    <ex:Compression>JPEG (old-style)</ex:Compression>
+    <ex:YCbCrPositioning>Center of pixel array</ex:YCbCrPositioning>
+    <ex:ShutterSpeedValue>1/59 sec</ex:ShutterSpeedValue>
+    <ip:Keywords>Species;Marine Life</ip:Keywords>
+    <ex:ResolutionUnit>Inch</ex:ResolutionUnit>
+    <ex:CompressedBitsPerPixel>1431655432/99 bits/pixel</ex:CompressedBitsPerPixel>
+    <ex:SubjectDistanceRange>Unknown</ex:SubjectDistanceRange>
+    <ex:GainControl>None</ex:GainControl>
+    <ex:YResolution>96 dots per inch</ex:YResolution>
+    <ex:MeteringMode>Center weighted average</ex:MeteringMode>
+    <ex:ExposureBiasValue>0 EV</ex:ExposureBiasValue>
+    <ex:ColorSpace>sRGB</ex:ColorSpace>
+    <ex:SensingMethod>One-chip color area sensor</ex:SensingMethod>
+    <ex:Makernote>[10512 values]</ex:Makernote>
+    <ex:ISOSpeedRatings>155</ex:ISOSpeedRatings>
+    <ex:Padding>[2060 values]</ex:Padding>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/m-2.jpg">
+    <ip:Keywords>Animals;Mammals;Species</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Cairo.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>548552</xmp:Content-Length>
+    <xmp:resourceName>Cairo.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/onb-1.jpg">
+    <ex:Copyright>KLAUS.PICHLER</ex:Copyright>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <ex:Software>Adobe Photoshop CC (Windows)</ex:Software>
+    <ex:ColorSpace>sRGB</ex:ColorSpace>
+    <ex:Sub-SecTimeOriginal>70</ex:Sub-SecTimeOriginal>
+    <ex:ImageWidth>7964 pixels</ex:ImageWidth>
+    <ip:ApplicationRecordVersion>4</ip:ApplicationRecordVersion>
+    <ip:Keywords>Library;Tourism;Education</ip:Keywords>
+    <ex:YResolution>72 dots per inch</ex:YResolution>
+    <ip:DigitalDateCreated>2014:09:03</ip:DigitalDateCreated>
+    <ex:SamplesPerPixel>3 samples/pixel</ex:SamplesPerPixel>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+    <ip:TimeCreated>15:23:39+0000</ip:TimeCreated>
+    <ex:ResolutionUnit>Inch</ex:ResolutionUnit>
+    <ip:DateCreated>2014:09:03</ip:DateCreated>
+    <ex:ExifImageHeight>1183 pixels</ex:ExifImageHeight>
+    <ex:BitsPerSample>8 8 8 bits/component/pixel</ex:BitsPerSample>
+    <ex:XResolution>72 dots per inch</ex:XResolution>
+    <ex:ExifImageWidth>1772 pixels</ex:ExifImageWidth>
+    <ip:By-line>KLAUS.PICHLER,www.kpic.at</ip:By-line>
+    <j.1:TimeDigitized>2014:09:03 15:23:39</j.1:TimeDigitized>
+    <ex:ImageHeight>5315 pixels</ex:ImageHeight>
+    <ex:ThumbnailOffset>436 bytes</ex:ThumbnailOffset>
+    <ex:Compression>JPEG (old-style)</ex:Compression>
+    <j.1:Time>2014:12:09 16:54:12</j.1:Time>
+    <ip:CopyrightNotice>KLAUS.PICHLER</ip:CopyrightNotice>
+    <ex:ThumbnailLength>7992 bytes</ex:ThumbnailLength>
+    <ex:ExifVersion>2.30</ex:ExifVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/lib-2.jpg">
+    <ex:ThumbnailOffset>1052 bytes</ex:ThumbnailOffset>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+    <ex:FlashPixVersion>1.00</ex:FlashPixVersion>
+    <ex:Model>Canon EOS 6D</ex:Model>
+    <ex:Sub-SecTimeOriginal>11</ex:Sub-SecTimeOriginal>
+    <ex:XResolution>350 dots per inch</ex:XResolution>
+    <ex:ThumbnailLength>3008 bytes</ex:ThumbnailLength>
+    <ex:Sub-SecTimeDigitized>11</ex:Sub-SecTimeDigitized>
+    <ex:WhiteBalanceMode>Auto white balance</ex:WhiteBalanceMode>
+    <ex:ExposureMode>Auto exposure</ex:ExposureMode>
+    <ex:SceneCaptureType>Standard</ex:SceneCaptureType>
+    <ip:Keywords>Library;Education;University</ip:Keywords>
+    <ex:YResolution>350 dots per inch</ex:YResolution>
+    <ex:ColorSpace>sRGB</ex:ColorSpace>
+    <ex:ExposureTime>1/250 sec</ex:ExposureTime>
+    <ex:Flash>Flash did not fire</ex:Flash>
+    <ex:ISOSpeedRatings>1600</ex:ISOSpeedRatings>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <ex:CustomRendered>Normal process</ex:CustomRendered>
+    <ex:ComponentsConfiguration>YCbCr</ex:ComponentsConfiguration>
+    <ex:MeteringMode>Multi-segment</ex:MeteringMode>
+    <ex:ExposureProgram>Aperture priority</ex:ExposureProgram>
+    <ex:ExifImageHeight>2984 pixels</ex:ExifImageHeight>
+    <ex:UserComment></ex:UserComment>
+    <ex:F-Number>f/5.6</ex:F-Number>
+    <ex:ResolutionUnit>Inch</ex:ResolutionUnit>
+    <ex:ExposureBiasValue>0 EV</ex:ExposureBiasValue>
+    <j.1:TimeDigitized>2014:09:28 10:18:40</j.1:TimeDigitized>
+    <ex:ApertureValue>f/5.7</ex:ApertureValue>
+    <ex:ExifVersion>2.30</ex:ExifVersion>
+    <ex:ShutterSpeedValue>1/255 sec</ex:ShutterSpeedValue>
+    <ex:ExifImageWidth>4476 pixels</ex:ExifImageWidth>
+    <ex:Sub-SecTime>11</ex:Sub-SecTime>
+    <ex:YCbCrPositioning>Center of pixel array</ex:YCbCrPositioning>
+    <ex:Compression>JPEG (old-style)</ex:Compression>
+    <ex:Make>Canon</ex:Make>
+    <ex:FocalLength>105 mm</ex:FocalLength>
+    <ex:Software>Digital Photo Professional</ex:Software>
+    <j.1:Time>2015:01:02 00:05:55</j.1:Time>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/vie-1.jpg">
+    <ex:WhiteBalanceMode>Auto white balance</ex:WhiteBalanceMode>
+    <ex:UserComment></ex:UserComment>
+    <ex:ColorSpace>Undefined</ex:ColorSpace>
+    <ex:CFAPattern>[Red,Green][Green,Blue]</ex:CFAPattern>
+    <ex:SubjectDistanceRange>Unknown</ex:SubjectDistanceRange>
+    <ex:ThumbnailOffset>26724 bytes</ex:ThumbnailOffset>
+    <ex:MeteringMode>Multi-segment</ex:MeteringMode>
+    <ex:Sharpness>Hard</ex:Sharpness>
+    <ip:Keywords>Holiday;Landscape;City;Tourism;Capital</ip:Keywords>
+    <ex:SensingMethod>One-chip color area sensor</ex:SensingMethod>
+    <ex:Software>ViewNX 2.10 W</ex:Software>
+    <ex:FocalLength35>39 mm</ex:FocalLength35>
+    <ex:Flash>Flash did not fire</ex:Flash>
+    <ex:YCbCrPositioning>Center of pixel array</ex:YCbCrPositioning>
+    <ex:WhiteBalance>Unknown</ex:WhiteBalance>
+    <ex:ExifVersion>2.30</ex:ExifVersion>
+    <ex:FlashPixVersion>1.00</ex:FlashPixVersion>
+    <ex:Copyright>Christian Philipp, CC-by-sa 3.0                       </ex:Copyright>
+    <ex:YResolution>300 dots per inch</ex:YResolution>
+    <ex:SceneCaptureType>Standard</ex:SceneCaptureType>
+    <ex:ExposureTime>1/160 sec</ex:ExposureTime>
+    <ex:Orientation>Top, left side (Horizontal / normal)</ex:Orientation>
+    <ex:Sub-SecTimeOriginal>30</ex:Sub-SecTimeOriginal>
+    <j.1:TimeDigitized>2017:02:15 14:19:02</j.1:TimeDigitized>
+    <ex:MaxApertureValue>f/3.9</ex:MaxApertureValue>
+    <ex:Sub-SecTimeDigitized>30</ex:Sub-SecTimeDigitized>
+    <ex:ExposureMode>Auto exposure</ex:ExposureMode>
+    <ex:ExposureBiasValue>-1/3 EV</ex:ExposureBiasValue>
+    <ex:ResolutionUnit>Inch</ex:ResolutionUnit>
+    <ex:Model>NIKON D7000</ex:Model>
+    <ex:ComponentsConfiguration>YCbCr</ex:ComponentsConfiguration>
+    <ex:ExifImageHeight>2470 pixels</ex:ExifImageHeight>
+    <ex:CustomRendered>Normal process</ex:CustomRendered>
+    <ex:Sub-SecTime>30</ex:Sub-SecTime>
+    <ex:Saturation>None</ex:Saturation>
+    <ex:ExifImageWidth>4861 pixels</ex:ExifImageWidth>
+    <ex:Contrast>None</ex:Contrast>
+    <ex:GainControl>None</ex:GainControl>
+    <ex:ExposureProgram>Shutter priority</ex:ExposureProgram>
+    <j.1:Time>2017:10:07 01:20:05</j.1:Time>
+    <ex:DigitalZoomRatio>1</ex:DigitalZoomRatio>
+    <ex:ThumbnailLength>4161 bytes</ex:ThumbnailLength>
+    <ex:Make>NIKON CORPORATION</ex:Make>
+    <j.0:White>[0,0,0] [255,255,255]</j.0:White>
+    <ex:FocalLength>26 mm</ex:FocalLength>
+    <ex:XResolution>300 dots per inch</ex:XResolution>
+    <ex:F-Number>f/16.0</ex:F-Number>
+    <ex:FileSource>Digital Still Camera (DSC)</ex:FileSource>
+    <ex:Compression>JPEG (old-style)</ex:Compression>
+    <ex:SceneType>Directly photographed image</ex:SceneType>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+    <ex:ISOSpeedRatings>200</ex:ISOSpeedRatings>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/ca-1.jpg">
+    <ip:Keywords>Holiday;Landscape;City;Tourism;Capital;Education;University</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/m-3.jpg">
+    <ip:Keywords>Animals;Mammals;Species</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/ca-21.jpg">
+    <ip:Keywords>Holiday;Landscape;City;Tourism;Capital</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/Mammals.pdf">
+    <xmp:Content-Type>application/pdf</xmp:Content-Type>
+    <xmp:Content-Length>177763</xmp:Content-Length>
+    <xmp:resourceName>Mammals.pdf</xmp:resourceName>
+    <xmp:X-Parsed-By>org.apache.tika.parser.EmptyParser</xmp:X-Parsed-By>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://RDFmodel/example/ml-1.jpg">
+    <ip:Keywords>Mammals;Species;Marine Life</ip:Keywords>
+    <j.2:AnalyzedBy>11925311</j.2:AnalyzedBy>
+  </rdf:Description>
+</rdf:RDF>
