@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 import org.apache.jena.rdf.model.Model;
 
-// /Users/ilincavultur/Desktop/6. Semester/MCM/11925311-ilinca-vultur/src
 public class Main {
 
 	static FilesReader reader = new FilesReader();
