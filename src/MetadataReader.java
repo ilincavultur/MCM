@@ -1,19 +1,12 @@
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.imaging.ImageProcessingException;
-import com.drew.imaging.jpeg.JpegMetadataReader;
 import com.drew.metadata.Directory;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.Tag;
-//import com.drew.metadata.exif.ExifDirectory;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.tika.metadata.DublinCore;
 import org.apache.tika.Tika;
 
 public class MetadataReader {
@@ -26,8 +19,6 @@ public class MetadataReader {
 	private Map<String, Map<String, String>> imageIptc = new HashMap<String, Map<String, String>>();
 	private Map<String, Map<String, String>> pdfXmp = new HashMap<String, Map<String, String>>();
 	private Map<String, Map<String, String>> pdfDc = new HashMap<String, Map<String, String>>();
-	
-	
 	
 	public MetadataReader() {
 		super();
@@ -92,10 +83,10 @@ public class MetadataReader {
 				imageIptc.put(entry.getKey(), iptcData);
 				
 			} catch (ImageProcessingException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 			}
 		}
@@ -110,42 +101,25 @@ public class MetadataReader {
 			dcData = new HashMap<String, String>();
 			
 			try {
+				
 				Tika parser = new Tika();
 				org.apache.tika.metadata.Metadata data = new org.apache.tika.metadata.Metadata();
-				//org.apache.tika.metadata.DublinCore dcData = new org.apache.tika.metadata.DublinCore();
 				parser.parse(new File(entry.getValue()), data);
-				//		ImageMetadataReader.readMetadata(new File(entry.getValue()));
-				
-				
+
 				for (String tag : data.names()) {
 					for (String val : data.getValues(tag)) {
-						//System.out.println("tag : " + tag + " " + "xmp data : " + val);
-						xmpData.put(tag, val);
-						/*if (tag.contains("xmp")) {
-							//for (Tag exifTag : dir.getTags()) {
-								xmpData.put(tag, val);
-								//System.out.println("xmp data : " + xmpData.get(tag));
-							//}
-						}
 						
-						if (tag.contains("dc")) {
-							//for (Tag iptcTag : dir.getTags()) {
-								dcData.put(tag, val);
-								//System.out.println("dc data : " + dcData.get(tag));
-							//}
-						}*/
+						xmpData.put(tag, val);
+
 					}
-					
-					//System.out.println("tag : " + tag + " " + data.get(tag));
-					
-					
+		
 				}
 				
 				pdfXmp.put(entry.getKey(), xmpData);
 				pdfDc.put(entry.getKey(), dcData);
 				
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 			}
 		}
@@ -154,7 +128,8 @@ public class MetadataReader {
 	
 	public void printJpegExifMetadata () {
 		
-		System.out.println("EXIF");
+		System.out.println("------------------EXIF-----------------");
+		System.out.println();
 		
 		for (Map.Entry<String, Map<String, String>> entry : imageExif.entrySet()) {
 			
@@ -170,7 +145,8 @@ public class MetadataReader {
 	
 	public void printJpegIptcMetadata () {
 		
-		System.out.println("IPTC");
+		System.out.println("------------------IPTC-----------------");
+		System.out.println();
 		
 		for (Map.Entry<String, Map<String, String>> entry : imageIptc.entrySet()) {
 			
@@ -186,7 +162,8 @@ public class MetadataReader {
 	
 	public void printPdfXmpMetadata () {
 		
-		System.out.println("XMP");
+		System.out.println("------------------XMP-----------------");
+		System.out.println();
 		
 		for (Map.Entry<String, Map<String, String>> entry : pdfXmp.entrySet()) {
 			
@@ -202,7 +179,8 @@ public class MetadataReader {
 	
 	public void printPdfDcMetadata () {
 		
-		System.out.println("DC");
+		System.out.println("------------------DC-----------------");
+		System.out.println();
 		
 		for (Map.Entry<String, Map<String, String>> entry : pdfDc.entrySet()) {
 			

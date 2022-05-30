@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
+import org.apache.jena.rdf.model.Model;
+
 // /Users/ilincavultur/Desktop/6. Semester/MCM/11925311-ilinca-vultur/src
 public class Main {
 
 	static FilesReader reader = new FilesReader();
 	static MetadataReader metadataReader = new MetadataReader();
 	static RDFmodel rdfModel = new RDFmodel();
+	static SPARQLqueries query = new SPARQLqueries();
 
 	public static void main(String[] args) {
-		// Task 1
 
 		Scanner inputScanner = new Scanner(System.in);
 
@@ -22,21 +24,32 @@ public class Main {
 
 		reader.readFolder(path);
 
+		// read jpeg files
 		metadataReader.readJpegMetadata(reader.getJpegFiles());
+		
+		// print jpeg data
 		metadataReader.printJpegExifMetadata();
+		metadataReader.printJpegIptcMetadata();
 
-		// metadataReader.printJpegIptcMetadata();
-
+		// read pdf files
 		metadataReader.readPDFMetadata(reader.getPdfFiles());
-		//metadataReader.printPdfXmpMetadata();
-		// metadataReader.printPdfDcMetadata();
+		
+		// print pdf data
+		metadataReader.printPdfXmpMetadata();
+		metadataReader.printPdfDcMetadata();
 
+		// utils
 		rdfModel.setImageExif(metadataReader.getImageExif());
 		rdfModel.setImageIptc(metadataReader.getImageIptc());
 		rdfModel.setPdfXmp(metadataReader.getPdfXmp());
 		rdfModel.setPdfDc(metadataReader.getPdfDc());
-		rdfModel.createRDF();
 		
+		// get the model & save it to file
+		Model model = rdfModel.createRDF();
+		
+		// utils 
+		query.setModel(model);
+		query.startQuery();
 		
 	}
 
