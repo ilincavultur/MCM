@@ -124,9 +124,11 @@ public class RDFmodel {
 		System.out.println("RDF");
 		PrintStream fileStream;
 		try {
+			final PrintStream old = System.out;
 			fileStream = new PrintStream("src/result.rdf");
 			System.setOut(fileStream);
 			RDFDataMgr.write(System.out, rdfModel, Lang.RDFXML);
+			System.setOut(old);
 		} catch (FileNotFoundException e) {
 		
 			e.printStackTrace();
